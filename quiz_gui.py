@@ -1,8 +1,9 @@
-import csv
 import re
 import tkinter as tk
 from pathlib import Path
 from tkinter import filedialog, messagebox
+
+from answer_csv import parse_answers_csv
 
 
 DEFAULT_QUESTIONS = Path("C:/Users/binhv/Desktop/test/output_text/PMG201c - FA25 - RE.txt")
@@ -25,38 +26,6 @@ def parse_answers(answer_path: Path) -> dict[int, set[str]]:
         q_num = int(match.group(1))
         values = {part.strip().upper() for part in match.group(2).split(",")}
         answers[q_num] = values
-    return answers
-
-
-def normalize_answer_cell(cell: str) -> set[str]:
-    raw = cell.strip().upper().replace(" ", "")
-    if not raw:
-        return set()
-    if "," in raw:
-        return {part for part in raw.split(",") if part}
-    return {ch for ch in raw if "A" <= ch <= "F"}
-
-
-def parse_answers_csv(answer_path: Path) -> dict[int, set[str]]:
-    answers: dict[int, set[str]] = {}
-    with answer_path.open("r", encoding="utf-8-sig", newline="") as fh:
-        reader = csv.reader(fh)
-        rows = list(reader)
-
-    if not rows:
-        return answers
-
-    data_rows = rows[1:]  # skip header
-    for idx, row in enumerate(data_rows, start=1):
-        if not row:
-            continue
-        selected = set()
-        for cell in row:
-            selected = normalize_answer_cell(cell)
-            if selected:
-                break
-        if selected:
-            answers[idx] = selected
     return answers
 
 

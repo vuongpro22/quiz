@@ -1,9 +1,10 @@
 import argparse
-import csv
 import random
 import re
 from dataclasses import dataclass
 from pathlib import Path
+
+from answer_csv import parse_answers_csv
 
 
 HEADER_PATTERN = re.compile(r"=+\s*Q(\d+)\.webp\s*=+", re.IGNORECASE)
@@ -38,30 +39,6 @@ def parse_answers_txt(path: Path) -> dict[int, set[str]]:
         q_num = int(match.group(1))
         values = {part.strip().upper() for part in match.group(2).split(",")}
         answers[q_num] = values
-    return answers
-
-
-def parse_answers_csv(path: Path) -> dict[int, set[str]]:
-    answers: dict[int, set[str]] = {}
-    with path.open("r", encoding="utf-8-sig", newline="") as fh:
-        rows = list(csv.reader(fh))
-    if not rows:
-        return answers
-
-    for idx, row in enumerate(rows[1:], start=1):
-        selected: set[str] = set()
-        for cell in row:
-            token = cell.strip().upper().replace(" ", "")
-            if not token:
-                continue
-            if "," in token:
-                selected = {x for x in token.split(",") if x}
-            else:
-                selected = {ch for ch in token if "A" <= ch <= "F"}
-            if selected:
-                break
-        if selected:
-            answers[idx] = selected
     return answers
 
 
