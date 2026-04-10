@@ -37,7 +37,7 @@ C. Being kept updated about project progress.
 D. Completing the work
 
 ===== Q6.webp =====
-Question: 6 Ue I RE re 7 “ Your project has a team of which consists of yourself. a tester, five developers and a communicator. How many communication channels on your team?
+Question: 6 “ Your project has a team of which consists of yourself. a tester, five developers and a communicator. How many communication channels on your team?
 (Choose 1 answer)
 
 ===== Q7.webp =====
@@ -51,13 +51,13 @@ E. Sponsor
 F. People that are not impacted by your project
 
 ===== Q8.webp =====
-Question: 8 BR _ ” I On 7 “ True or False: The Forward Pass 1s used through the activities to determine the critical path & available float of the project
+Question: 8 “ True or False: The Forward Pass 1s used through the activities to determine the critical path & available float of the project
 (Choose 1 answer)
 A. True
 B. False
 
 ===== Q9.webp =====
-Question: 9 al ne laa ne - “ Your project team is customer focused and often agrees to incorporate many small scope changes throughout the project execution. The changes are documented in an issues log. Which of the following ts not a potential problem?
+Question: 9 “ Your project team is customer focused and often agrees to incorporate many small scope changes throughout the project execution. The changes are documented in an issues log. Which of the following ts not a potential problem?
 (Choose 1 answer)
 A. Changes may not be integrated across the whole project
 B. Changes with impacts on cost or time will be elevated to the Change Control Board.
@@ -65,7 +65,7 @@ C. Management of product specifications and configuration become more difficult.
 D. Many small changes may accumulate to create trouble for one of the project objectives.
 
 ===== Q10.webp =====
-Question: 10 UU _ ll ne _ aati One way to classify your stakehoiders is to use the Power/Interest Grid. If a stakeholder is high interest / high power, what should the Project Manager do?
+Question: 10  One way to classify your stakehoiders is to use the Power/Interest Grid. If a stakeholder is high interest / high power, what should the Project Manager do?
 (Choose 1 answer)
 A. Monitor
 B. Keep satisfied
@@ -73,7 +73,7 @@ C. Manage closely
 D. Keep informed
 
 ===== Q11.webp =====
-Question: 11 _ . MA re - eal In a project context, risk is defined as
+Question: 11  In a project context, risk is defined as
 (Choose 1 answer)
 A. The probability of an event having a positive or negative effect on at least one project objective.
 B. The impact of not completing the project on time and within budget.
@@ -81,7 +81,7 @@ C. An uncertain event that. if it occurs, will have a positive or negative effec
 D. An uncertain event that, if it occurs. will have a negative effect on at least one project objective.
 
 ===== Q12.webp =====
-Question: 12 (Chooselanswe) Which one of these Is correct view of conflict?
+Question: 12 Which one of these Is correct view of conflict?
 (Choose 1 answer)
 A. Caused by troublemakers
 B. Always bad
@@ -97,7 +97,7 @@ C. Requirements specifications
 D. Resource calendars and scope statement
 
 ===== Q14.webp =====
-Question: 14 Um EE MA re _ alll Which statement is not correct?
+Question: 14  Which statement is not correct?
 (Choose 1 answer)
 A. Project scope is the work that needs to be accomplished to deliver a product. service, or result.
 B. Product scope completion is measured against the product requirement.
@@ -105,7 +105,7 @@ C. Project scope completion is measured against the project management plan and 
 D. Product scope is the work that needs to be accomplished to complete a project
 
 ===== Q15.webp =====
-Question: 15 UU Oo laa ne 7 “ Your stakeholder register is your primary output and should at least contain
+Question: 15  “ Your stakeholder register is your primary output and should at least contain
 (Choose 1 answer)
 A. Job descriptions, identification information. and stakeholder classification
 B. Assessment information, scope information. and stakeholder classification
@@ -121,13 +121,13 @@ C. Detailed resources estimates
 D. The business case for the project
 
 ===== Q17.webp =====
-Question: 17 UU _ * RI On _ “ True or False: Earned value integrates scope. schedule and budget and uses monetary values to assess project status
+Question: 17 “ True or False: Earned value integrates scope. schedule and budget and uses monetary values to assess project status
 (Choose 1 answer)
 A. False
 B. True
 
 ===== Q18.webp =====
-Question: 18 Um TE 7 OS _ eal You just came from a meeting with one of your project stakeholders, he knew about your project and also its potential impacts, and he always supported for the work and its outcomes. How would you classify him?
+Question: 18  You just came from a meeting with one of your project stakeholders, he knew about your project and also its potential impacts, and he always supported for the work and its outcomes. How would you classify him?
 (Choose 1 answer)
 A. Supportive
 B. Neutral
@@ -135,7 +135,7 @@ C. Unaware
 D. Leading
 
 ===== Q19.webp =====
-Question: 19 UU Oo laa ne 7 “ You and another project manager disagree over whether a team member should work on your team or on her team. You decide that the team member can work for the other project manager in the afternoon and the other project manager says it is OK for the team member to work for you in the morning. The truth is you both wanted this person fulltime. The conflict resolution approach you have both used is
+Question: 19 “ You and another project manager disagree over whether a team member should work on your team or on her team. You decide that the team member can work for the other project manager in the afternoon and the other project manager says it is OK for the team member to work for you in the morning. The truth is you both wanted this person fulltime. The conflict resolution approach you have both used is
 (Choose 1 answer)
 A. Compromising
 B. Smoothing
@@ -159,19 +159,27 @@ C. Continuous improvement
 D. Project team responsibility
 
 ===== Q22.webp =====
-Question: 22 UU alll - “ True or False: The term resources only refers to people, it does not include money or materials or equipment
+Question: 22 “ True or False: The term resources only refers to people, it does not include money or materials or equipment
 (Choose 1 answer)
 A. True
 B. False
 
 ===== Q23.webp =====
-Question: 23 UU es MR - “ True or False: A Project is defined as being unique and temporary, with an undefined start and finish
+Question: 23 “ True or False: A Project is defined as being unique and temporary, with an undefined start and finish
 (Choose 1 answer)
 A. True
 B. False
 
 ===== Q24.webp =====
-Question: 24 Which one is the correct matching of report types and the descriptions? Report types (1) Status report (2) Progress report (3) Forecasting report Descriptions (a) Predicting future project progress and completion (b) Describing what the project team has accomplished or what is completed versus what is in progress (c) Describing where the project now stands
+Question: 24 Which one is the correct matching of report types and the descriptions? 
+Report types 
+(1) Status report 
+(2) Progress report 
+(3) Forecasting report 
+Descriptions 
+(a) Predicting future project progress and completion 
+(b) Describing what the project team has accomplished or what is completed versus what is in progress 
+(c) Describing where the project now stands
 (Choose 1 answer)
 A. (1)&(a), (2)&(b). (3)&(c)
 B. (1)&(a). (2)&(c). (3)&(b)
@@ -181,13 +189,13 @@ E. (1)&(c), (2)&(a). (3)&(b)
 F. (1)&(c), (2)&(b). (3)&(a)
 
 ===== Q25.webp =====
-Question: 25 UU all ne _ aati True or False: Your project might pay more in order to reduce the schedule when using Crashing approach but that is not often true if using Fast Tracking approach (Choase 1 answer}
+Question: 25 True or False: Your project might pay more in order to reduce the schedule when using Crashing approach but that is not often true if using Fast Tracking approach (Choase 1 answer}
 (Choose 1 answer)
 A. True
 B. False
 
 ===== Q26.webp =====
-Question: 26 UU _ ne A I On _ “ True or False: Effective project communication management creates a bridge between stakeholders based on a shared understanding of the project and the ongoing sharing of information needed for its success
+Question: 26 “ True or False: Effective project communication management creates a bridge between stakeholders based on a shared understanding of the project and the ongoing sharing of information needed for its success
 (Choose 1 answer)
 A. True
 B. False
@@ -201,7 +209,7 @@ C. Bottom-up estimating
 D. Exact estimating
 
 ===== Q28.webp =====
-Question: 28 UE _ . MA re - eal The purpose of capturing lessons learned is
+Question: 28  The purpose of capturing lessons learned is
 (Choose 1 answer)
 A. To show stakeholders how difficult the project was so that next time their demands will not be so high
 B. To capture project failures so that you can avoid the reasons for failure next time.
@@ -217,7 +225,7 @@ C. Roles and Responsibilities
 D. Risk Register
 
 ===== Q30.webp =====
-Question: 30 UU es MR - “ True or False: Project quality focuses on the project management processes used to meet project objectives
+Question: 30 “ True or False: Project quality focuses on the project management processes used to meet project objectives
 (Choose 1 answer)
 A. False
 B. True
@@ -231,7 +239,7 @@ C. Functional manager
 D. Sponsor
 
 ===== Q32.webp =====
-Question: 32 UU Oo laa ne 7 “ True or False: Your role as the project manager during quality assurance Is to implement the quality management plan using the appropriate tools and techniques. in order to ensure that work is being performed according to required quality standards
+Question: 32 “ True or False: Your role as the project manager during quality assurance Is to implement the quality management plan using the appropriate tools and techniques. in order to ensure that work is being performed according to required quality standards
 (Choose 1 answer)
 A. False
 B. True
@@ -245,7 +253,7 @@ C. Healthy conflict
 D. Unhealthy conflict.
 
 ===== Q34.webp =====
-Question: 34 UU Oo laa ne 7 “ During a project team meeting, a team member suggests an enhancement to the scope that is beyond the scope of the project charter. The project manager points out that the team needs to concentrate on completing all the work and only the work required. This is an example of
+Question: 34 “ During a project team meeting, a team member suggests an enhancement to the scope that is beyond the scope of the project charter. The project manager points out that the team needs to concentrate on completing all the work and only the work required. This is an example of
 (Choose 1 answer)
 A. Change management
 B. Scope management
@@ -265,24 +273,24 @@ Question: 36 Given Tm is the most likely of the estimated duration of the activi
 (Choose 1 answer)
 A. Te=(Tm + 4*To + Tp)/6
 B. Te=(To+ 4*Tp + Tm)/6
-C. Te=(Tp + 4*Tm + Toy/6
-D. Te=(Tm + To+ Tpy/3
+C. Te=(Tp + 4*Tm + To)/6
+D. Te=(Tm + To+ Tp)/3
 
 ===== Q37.webp =====
-Question: 37 UU Oo laa ne 7 “ True or False: Your role as the project manager during quality control is to work with a representative of quality control department who will create a test plan and test cases which will be used to test the product you are creating in order to prevent defects from reaching your customer
+Question: 37  “ True or False: Your role as the project manager during quality control is to work with a representative of quality control department who will create a test plan and test cases which will be used to test the product you are creating in order to prevent defects from reaching your customer
 (Choose 1 answer)
 A. False
 B. True
 
 ===== Q38.webp =====
-Question: 38 UU all ne _ eal In Earned Value Management Technique, you can compute the Schedule Variance (SV) by applying which of following formula? (Choase 1 answer}
+Question: 38  In Earned Value Management Technique, you can compute the Schedule Variance (SV) by applying which of following formula? (Choase 1 answer}
 (Choose 1 answer)
 A. SV=EV/PV
 B. SV=EV-AC Cc. SV=EV-PV
 D. SV=EV/AC
 
 ===== Q39.webp =====
-Question: 39 Um EE MA re _ alll If the response you choose is to exploit a risk this means that
+Question: 39  If the response you choose is to exploit a risk this means that
 (Choose 1 answer)
 A. You actively do not consider the risk but establish contingency plan.
 B. You add steps to your plans to make certain the opportunity is captured.
@@ -307,7 +315,7 @@ D. Monitoring and controlling
 E. Closing
 
 ===== Q42.webp =====
-Question: 42 UU es MR - “ True or False: An important part of the project scope statement is exclusions or out of scope items
+Question:  “ True or False: An important part of the project scope statement is exclusions or out of scope items
 (Choose 1 answer)
 A. False
 B. True
@@ -321,7 +329,7 @@ C. Project team
 D. Project resources
 
 ===== Q44.webp =====
-Question: 44 UU Oo laa ne 7 “ The network diagram can be used to
+Question: 44  “ The network diagram can be used to
 (Choose 1 answer)
 A. Control the cost performance of the project
 B. Show project schedule performance over time
@@ -330,7 +338,7 @@ D. Help to identify riskier activities
 E. Help to justify project quality metrics
 
 ===== Q45.webp =====
-Question: 45 ee anal ne eal f Activity | Day1 | Dey2 | Dey3 | Dey4 | StatuEndofDay3 You have a project to build a new fence. The fence val fsidea sr] | Complete, spent $1,000 form a square. Each side !s to take one day to build, and Side2 | S—F——_PF i i Complete, spent $900 $1000 has been budgeted per side, The sides ae sides [|S pr] (Se, spent $500 fhoendofday 3 ne ne ower Today's | CT CS — | 5 pF [75% done, spent $600 | the end of day 3 [Sides | S—————_ |PS —_—_PF |75% done, spent $600 Using the following project status chart to calculate project current BAC I key: S = Actual Start, F = Actual Finish, PS = Planned Start, and PF = Planned Finish
+Question:  Activity | Day1 | Dey2 | Dey3 | Dey4 | StatuEndofDay3 You have a project to build a new fence. The fence val fsidea sr] | Complete, spent $1,000 form a square. Each side !s to take one day to build, and Side2 | S—F——_PF i i Complete, spent $900 $1000 has been budgeted per side, The sides ae sides [|S pr] (Se, spent $500 fhoendofday 3 ne ne ower Today's | CT CS — | 5 pF [75% done, spent $600 | the end of day 3 [Sides | S—————_ |PS —_—_PF |75% done, spent $600 Using the following project status chart to calculate project current BAC I key: S = Actual Start, F = Actual Finish, PS = Planned Start, and PF = Planned Finish
 (Choose 1 answer)
 A. BAC = $2,500
 B. BAC = $3,100 CBAC = $3.250
@@ -348,25 +356,25 @@ E. Leading
 F. Monitoring
 
 ===== Q47.webp =====
-Question: 47 _ a I On 7 “ True or False: When you choose to transfer your project risk to a third party. it may give rise to secondary risk that did not exist prior to the transfer
+Question: 47  “ True or False: When you choose to transfer your project risk to a third party. it may give rise to secondary risk that did not exist prior to the transfer
 (Choose 1 answer)
 A. True
 B. False
 
 ===== Q48.webp =====
-Question: 48 UU es MR - “ True or False: Authority means you have the right to apply resources, make decisions and give approvals
+Question: 48  “ True or False: Authority means you have the right to apply resources, make decisions and give approvals
 (Choose 1 answer)
 A. False
 B. True
 
 ===== Q49.webp =====
-Question: 49 = _ a On 7 “ True or False: It should not to add extra cost to the estimates when you are concerned that your estimates might not be correct. especially if you think they are too low
+Question: 49  “ True or False: It should not to add extra cost to the estimates when you are concerned that your estimates might not be correct. especially if you think they are too low
 (Choose 1 answer)
 A. True
 B. False
 
 ===== Q50.webp =====
-Question: 50 UU Oo laa ne 7 “ Which one of these most correctly defines management reserve?
+Question: 50  “ Which one of these most correctly defines management reserve?
 (Choose 1 answer)
 A. Per our lesson. management reserve and contingency are exactly the same.
 B. Management reserve is not tied to specific work packages it is for the entire project.
