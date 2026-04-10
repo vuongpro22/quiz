@@ -16,6 +16,9 @@ NOISE_MARKERS = (
     "FUOVERFLOW.COM",
     "FD",
     "fol{-",
+    "UE A ne _ eal",
+    "UU _ ll ne _ eal",
+    "UU _ lll ne _ eal",
 )
 
 
@@ -78,6 +81,17 @@ def get_merged_output_name(input_path: Path) -> str:
     return f"{input_path.stem}.txt"
 
 
+def format_display_image_name(image_path: Path) -> str:
+    """
+    Normalize names like Q1_53_20250824.webp to Q1.webp.
+    Keep original name if it does not match Q<number> pattern.
+    """
+    match = re.match(r"^(Q\d+)(?:_.*)?$", image_path.stem, flags=re.IGNORECASE)
+    if match:
+        return f"{match.group(1).upper()}.webp"
+    return image_path.name
+
+
 def save_merged_text(
     output_dir: Path,
     input_path: Path,
@@ -87,7 +101,8 @@ def save_merged_text(
     out_file = output_dir / get_merged_output_name(input_path)
     chunks = []
     for image_path, text in all_results:
-        chunks.append(f"===== {image_path.name} =====\n{text.strip()}\n")
+        display_name = format_display_image_name(image_path)
+        chunks.append(f"===== {display_name} =====\n{text.strip()}\n")
     out_file.write_text("\n".join(chunks).strip() + "\n", encoding="utf-8")
     return out_file
 

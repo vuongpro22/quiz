@@ -1,0 +1,372 @@
+===== Q1.webp =====
+Question: 1 A market demand, a business need, and a legal requirement are examples of
+(Choose 1 answer)
+A. Reasons to hire a project manager
+B. Reasons projects are initiated
+C. Reasons people or businesses become stakeholders
+D. Reasons to sponsor a project
+
+===== Q2.webp =====
+Question: 2 A project manager is trying to complete a software development project, but cannot get enough attention for the project. Resources are focused on completing process-related work, and the project manager has little authority to assign resources. What form of organization must the project manager be working in?
+(Choose 1 answer)
+A. Functional
+B. Matrix
+C. Projectized
+D. Coordinator 
+
+===== Q3.webp =====
+Question: 3 A project manager's primary responsibility is to deliver the product of the project within project constraints Actions taken and changes made to the benefit of one constraint could negatively affect another. Which of the following best describes the major constraints on a project’?
+(Choose 1 answer)
+A. Scope, number of resources, and cost
+B. Scope, cost, and schedule
+C. Scope, schedule, cost, quality, risk, resources, and customer satisfaction
+D. Schedule, cost, and number of changes
+
+===== Q4.webp =====
+Question: 4 Which of the following best describes a project management plan?
+(Choose 1 answer)
+A. A printout from project management software
+B. A bar chart
+C. Scope, risk, resource, and other management plan
+D. A project schedule
+
+===== Q5.webp =====
+Question: 5 All the following occur during the planning process group EXCEPT
+(Choose 1 answer)
+A. Develop Project Charter
+B. Create WBS
+C. Estimate Costs
+D. Sequence Activities
+
+===== Q6.webp =====
+Question: 6 D True or False: The Project Charter is a document issued by the project initiator or sponsor that formally authorizes the existence of a project. It provides the project manager with the authority to apply organizational resources to project activities
+(Choose 1 answer)
+A. False
+B. True 
+
+===== Q7.webp =====
+Question: 7 Scope creep results in all of the followings, except
+(Choose 1 answer)
+A. Completion delays
+B. Escalation of costs
+C. Increases in project complexity
+D. Decreases in project complexity
+
+===== Q8.webp =====
+Question: 8 True or False: In the context of a project, change is always a bad thing
+(Choose 1 answer)
+A. True
+B. False
+
+===== Q9.webp =====
+Question: 9 During executing, the project manager determines that a change is needed to material purchased for the project. The project manager calls a meeting of the team to plan how to make the changes. This is an example of
+(Choose 1 answer)
+A. Management by objectives
+B. Lack of a change management plan
+C. Good team relations
+D. Lack of a clear work breakdown structure
+
+===== Q10.webp =====
+Question: 10 company procedtes require the creation of a lessons learned register. Which of the following is the best use
+(Choose 1 answer)
+A. Historical records for future projects
+B. Planning record for the current project
+C. Informing the team about what the project manager has done
+D. Informing the team about the project management plan 
+
+===== Q11.webp =====
+Question: 11 i Should the Project Scope Statement document include?
+(Choose 1 answer)
+A. Acceptance criteria
+B. Milestones
+C. WBS (Work Breakdown Structure)
+D. WBS Dictionary 
+
+===== Q12.webp =====
+Question: 12 As you plan your project, the sponsor informed you that all team members will be assigned to your project for at most 50% of their available time. This is an example of
+(Choose 1 answer)
+A. Poor planning.
+B. Wishful thinking.
+C. A project demand.
+D. A constraint.
+
+===== Q13.webp =====
+Question: 13 A new project manager has asked you for advice on creating a work breakdown structure. After you explain the process to her, she asks you what software she should use to create the WBS and what she should do ch 1 with it when it is completed. You might respond that the picture is not the most valuable result of creating a WBS. The most valuable result of a WBS is
+(Choose 1 answer)
+A. A Gant chart
+B. Team buy-in
+C. Activities
+D. A list of risks
+
+===== Q14.webp =====
+Question: 14 eee st thow work packages to make sure the team members clearly know what is included in
+(Choose 1 answer)
+A. The project scope statement
+B. The product scope
+C. The WBS dictionary
+D. The WBS
+
+===== Q15.webp =====
+Question: 15 All of the following are inputs to estimating activity durations except
+(Choose 1 answer)
+A. Organizational process assets
+B. Activity list and activity attributes
+C. Requirements specifications
+D. Resource calendars and scope statement COM
+
+===== Q16.webp =====
+Question: 16 True or False: Project Manager should consider using milestones for high level reporting
+(Choose 1 answer)
+A. True
+B. False 
+
+===== Q17.webp =====
+Question: 17 Your team member informs you that the test system must be refreshed with your test data before testing can begin. This dependency is
+(Choose 1 answer)
+A. Discretionary
+B. Internal
+C. Mandatory
+D. External
+
+===== Q18.webp =====
+Question: 18 True or False: If "review online modules" needs to begin before “develop online modules" can finish, that is called a start to finish relationship
+(Choose 1 answer)
+A. True
+B. False
+
+===== Q19.webp =====
+Question: 19 To calculate late finish (LF) of an activity which has more than one successor, you will
+(Choose 1 answer)
+A. Take the earliest late start of its immediate successors. 
+B. Take the earliest early start of its immediate successors.
+C. Take the earliest late finish of its immediate successors.
+D. Take the earliest early finish of its immediate successors. 
+
+===== Q20.webp =====
+Question: 20 True or False: The critical path is made up by all zero float activities (activities have floats equal to zero) in the project network diagram
+(Choose 1 answer)
+A. False
+B. True
+
+===== Q21.webp =====
+Question: 21 thep Sect The Backward Pass is used through the activities to determine the critical path & available float of
+(Choose 1 answer)
+A. True
+B. False 
+
+===== Q22.webp =====
+Question: 22 Te oF False tre io wacking 's the approach to add more resources (labor, overtime, etc.) into the
+(Choose 1 answer)
+A. True
+B. False
+
+===== Q23.webp =====
+Question: 23 Which of the following is NOT the disadvantages of top-down estimating?
+(Choose 1 answer)
+A. Slow
+B. Less accurate
+C. Requires considerable experience to do well
+D. Does not take into account the differences between projects 
+
+===== Q24.webp =====
+Question: 24 A team member tells you that her work is too creative to provide you with a fixed single estimate for the activity. You both decide to use the average labor hours (from past, similar projects) to develop a prototype This is an example of which of the following?
+(Choose 1 answer)
+A. Parametric estimating
+B. Three-point estimating
+C. Analogous estimating
+D. One-point estimating 
+
+===== Q25.webp =====
+Question: 25  True or False: Using top-down estimating techniques when the detail is available and the accuracy is needed
+(Choose 1 answer)
+A. True
+B. False 
+
+===== Q26.webp =====
+Question: 26 True or False: The S-Curve depicts the relationship between the cost baseline budget and the schedule because it shows the planned cost baseline budget across the planned project timeline
+(Choose 1 answer)
+A. True
+B. False 
+
+===== Q27.webp =====
+Question: 27 pole or False: Earned value integrates schedule, budget and quality and uses monetary values to assess
+(Choose 1 answer)
+A. False
+B. True 
+
+===== Q28.webp =====
+Question: 28 B are Oscipine folewas management complements the discipline of project management. Both recognize all
+(Choose 1 answer)
+A. Customer satisfaction
+B. Prevention over inspection
+C. One-time improvement
+D. Management responsibility
+
+===== Q29.webp =====
+Question: 29 True or False: Product quality focuses on the project management processes used to meet project objectives
+(Choose 1 answer)
+A. False
+B. True
+
+===== Q30.webp =====
+Question: 30 The Process Improvement Plan is
+(Choose 1 answer)
+A. The number one component of the project management plan.
+B. A subsidiary, or component of the project management plan. 
+
+===== Q31.webp =====
+Question: 31 True or False: Performing quality assurance within the context of a project involves applying the planned systematic quality activities to ensure that the project correctly employs all processes needed to meet project objectives and product requirements
+(Choose 1 answer)
+A. False
+B. True 
+
+===== Q32.webp =====
+Question: 32 True or False: Your role as the project manager during quality control is to work with a representative of quality control department who will create a test plan and test cases which will be used to test the product you are creating in order to prevent defects from reaching your customer
+(Choose 1 answer)
+A. False
+B. True
+
+===== Q33.webp =====
+Question: 33 True or False: The term resources only refers to people, it does not include money or materials or equipment
+(Choose 1 answer)
+A. True
+B. False
+
+===== Q34.webp =====
+Question: 34 Which one of these is the correct view of conflict?
+(Choose 1 answer)
+A. Inevitable
+B. Always bad
+C. Should be avoided
+D. Must be suppressed 
+
+===== Q35.webp =====
+Question: 35 Which one of these is an example of role conflict
+(Choose 1 answer)
+A. When a team member does not know why he or she should do something.
+B. When a team member does not know how to do his or her job.
+C. When two team members are trying to complete the same task.
+D. When a team member is late completing a task. 
+
+===== Q36.webp =====
+Question: 36 What are the 5 approaches to conflict discussed in the Project Human Resources Management Lesson?
+(Choose 1 answer)
+A. Confronting, Compromising, Smoothing, Uninterested, Challenging.
+B. Communicating, Compromising, Smoothing, Forcing, Avoiding.
+C. Confronting, Compromising, Smoothing, Forcing, Avoiding.
+D. Confronting, Challenging, Smoothing, Forcing, Avoiding. 
+
+===== Q37.webp =====
+Question: 37 When you use the RACI or Responsible, Accountable, Consult, Inform version of the RAM, those informed persons are
+(Choose 1 answer)
+A. Providing subject matter expertise
+B. Making the final decision
+C. Being kept updated about project progress.
+D. Completing the work
+
+===== Q38.webp =====
+Question: 38 True or False: Effective project communication management creates a bridge between stakeholders based on a shared understanding of the project and the ongoing sharing of information needed for its success
+(Choose 1 answer)
+A. True
+B. False
+
+===== Q39.webp =====
+Question: 39 You are beginning to staff your project. Which of the following will NOT be used in developing and/or communicating roles and responsibilities?
+(Choose 1 answer)
+A. WBS
+B. Pareto chart
+C. Responsibility Assignment Matrix
+D. Organization chart Fue
+
+===== Q40.webp =====
+Question: 40 Downward communication is communication to/from
+(Choose 1 answer)
+A. Your senior management.
+B. Your social groups.
+C. Your direct reports.
+D. Your peers. 
+
+===== Q41.webp =====
+Question: 41  Which one is the correct matching of communication methods and the explanations? 
+Communication methods: 
+(1) interactive 
+(2) push 
+(3) Pull Explanations 
+Scenarios:
+(a) Between two or more parties and multidirectional; the most efficient way to ensure common understanding 
+(b) Sent to recipients; does not ensure it was actually received and understood 
+(c) Recipients must access the information; works for large amounts of information or large audiences, each recipient accesses at their own discretion
+(Choose 1 answer)
+A. (1)&(a), (2)&(b), (3)&(c)
+B. (1)&(a), (2)&(c), (3)&(b)
+C. (1)&(b), (2)&(c), (3)&(a)
+D. (1)&(b), (2)&(a), (3)&(c)
+E. (1)&(c), (2)&(a), (3)&(b)
+F. (1)&(c), (2)&(b), (3)&(a)
+
+===== Q42.webp =====
+Question: 42 sbict be neekly Or month yoporting aims to inform stakeholders the good achievements of the project’s
+(Choose 1 answer)
+A. True
+B. False
+
+===== Q43.webp =====
+Question: 43 True or False: A positive risk is a threat; a negative risk is an opportunity
+(Choose 1 answer)
+A. False
+B. True VGWERFIOW.COM
+
+===== Q44.webp =====
+Question: 44 All of the following tools and techniques can be valuable in risk identification, EXCEPT
+(Choose 1 answer)
+A. SWOT (Strengths, Opportunities, Weaknesses, Threats)
+B. Reviewing and evaluating project documents
+C. Reviewing similar projects executed in past
+D. EVM (Earned Value Management)
+
+===== Q45.webp =====
+Question: 45 If the response you choose is to mitigate a risk this means that
+(Choose 1 answer)
+A. You actively do not consider the risk but establish contingency plan.
+B. You change your plans so that you eliminate the risk.
+C. You change your plan so that another party will be responsible for the risk.
+D. You create your plan to reduce the probability and/or the impact of the risk.
+
+===== Q46.webp =====
+Question: 46 During a risk brainstorming session, a team member identifies a risk. This particular risk does not seem to belong to any of the categories in you Risk Breakdown Structure (RBS). How should you respond?
+(Choose 1 answer)
+A. Chastise him for making up risks which cannot exist because there is not a category for such risks.
+B. Ignore him and move on to another risk identified by a different team member.
+C. Thank him for his work, but inform him that the risk cannot be included because it does not fit any of the categories defined in the RBS.
+D. Record the list in the risk register, discuss potential responses and make a note to update the RBS.
+
+===== Q47.webp =====
+Question: 47 Who might not be your project's stakeholders?
+(Choose 1 answer)
+A. Project team members
+B. Project management team
+C. Customer/User
+D. Performing organizations
+E. Sponsor
+F. People that are not impacted by your project
+
+===== Q48.webp =====
+Question: 48 power ey Ao classy your est Manages tc aise the Power/Interest Grid. If a stakeholder is low interest / low
+(Choose 1 answer)
+A. Monitor
+B. Keep satisfied
+C. Manage closely
+D. Keep informed
+
+===== Q49.webp =====
+Question: 49 You just came from a meeting with one of your project stakeholders, he knew well about your project and also its potential impacts, and actively engaged in ensuring that the project is a success. How would you classify him?
+(Choose 1 answer)
+A. Supportive
+B. Neutral Cc. Unaware
+D. Leading 
+
+===== Q50.webp =====
+Question: 50 True or False: The Project Sponsor is responsible for stakeholder expectations management
+(Choose 1 answer)
+A. False
+B. True 

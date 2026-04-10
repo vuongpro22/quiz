@@ -5,8 +5,8 @@ from pathlib import Path
 from tkinter import filedialog, messagebox
 
 
-DEFAULT_QUESTIONS = Path("output_text/PMG201c - FA25 - RE.txt")
-DEFAULT_ANSWERS = Path("answer/PMG201c - FA25 - RE.txt")
+DEFAULT_QUESTIONS = Path("C:/Users/binhv/Desktop/test/output_text/PMG201c - FA25 - RE.txt")
+DEFAULT_ANSWERS = Path("C:/Users/binhv/Desktop/test/output_text/answer/PMG201c - FA25 - RE.txt")
 
 
 def parse_answers(answer_path: Path) -> dict[int, set[str]]:
@@ -60,16 +60,28 @@ def parse_answers_csv(answer_path: Path) -> dict[int, set[str]]:
     return answers
 
 
-def split_question_blocks(content: str) -> list[str]:
-    return [part.strip() for part in re.split(r"=+\s*Q\d+\.webp\s*=+", content) if part.strip()]
+def split_question_blocks(content: str) -> list[tuple[int, str]]:
+    pattern = re.compile(r"=+\s*Q(\d+)\.webp\s*=+", re.IGNORECASE)
+    matches = list(pattern.finditer(content))
+    blocks: list[tuple[int, str]] = []
+    for idx, match in enumerate(matches):
+        q_num = int(match.group(1))
+        start = match.end()
+        end = matches[idx + 1].start() if idx + 1 < len(matches) else len(content)
+        block_text = content[start:end].strip()
+        if block_text:
+            blocks.append((q_num, block_text))
+    return blocks
 
 
-def parse_question(block: str) -> tuple[int, str, list[tuple[str, str]], int]:
+def parse_question(block: str, fallback_q_num: int) -> tuple[int, str, list[tuple[str, str]], int]:
     q_match = re.search(r"Question:\s*(\d+)\s*(.*)", block)
-    if not q_match:
-        raise ValueError("Missing question number")
-    q_num = int(q_match.group(1))
-    question_line = q_match.group(2).strip()
+    if q_match:
+        q_num = int(q_match.group(1))
+        question_line = q_match.group(2).strip()
+    else:
+        q_num = fallback_q_num
+        question_line = ""
 
     choose_match = re.search(r"\(Choose\s+(\d+)\s+answers?\)", block, flags=re.IGNORECASE)
     choose_count = int(choose_match.group(1)) if choose_match else 1
@@ -79,15 +91,25 @@ def parse_question(block: str) -> tuple[int, str, list[tuple[str, str]], int]:
     for key, text in option_pattern.findall(block):
         clean_text = " ".join(text.replace("\n", " ").split())
         options.append((key.upper(), clean_text))
+
+    if not question_line:
+        lines = [ln.strip() for ln in block.splitlines() if ln.strip()]
+        for ln in lines:
+            if ln.startswith("(") or re.match(r"^[A-F]\.", ln):
+                continue
+            question_line = ln
+            break
+        if not question_line:
+            question_line = f"Question {q_num}"
     return q_num, question_line, options, choose_count
 
 
 def parse_questions(question_path: Path) -> dict[int, dict]:
     questions: dict[int, dict] = {}
     content = question_path.read_text(encoding="utf-8")
-    for block in split_question_blocks(content):
+    for header_q_num, block in split_question_blocks(content):
         try:
-            q_num, question_text, options, choose_count = parse_question(block)
+            q_num, question_text, options, choose_count = parse_question(block, header_q_num)
         except ValueError:
             continue
         questions[q_num] = {
@@ -116,6 +138,25 @@ class QuizApp:
         self._build_top_controls()
         self._build_quiz_area()
         self._build_nav_controls()
+        self.root.bind("<Left>", self._on_arrow_left)
+        self.root.bind("<Right>", self._on_arrow_right)
+
+    @staticmethod
+    def _focus_in_path_entry(widget) -> bool:
+        """Do not steal Left/Right when user edits file path fields."""
+        return isinstance(widget, tk.Entry)
+
+    def _on_arrow_left(self, event) -> str | None:
+        if self._focus_in_path_entry(self.root.focus_get()):
+            return
+        self.prev_question()
+        return "break"
+
+    def _on_arrow_right(self, event) -> str | None:
+        if self._focus_in_path_entry(self.root.focus_get()):
+            return
+        self.next_question()
+        return "break"
 
     def _build_top_controls(self) -> None:
         frame = tk.Frame(self.root, padx=10, pady=10)
@@ -385,6 +426,22 @@ class FlashcardWindow:
         )
 
         self.render_card()
+        self.win.bind("<Left>", self._on_flash_left)
+        self.win.bind("<Right>", self._on_flash_right)
+        self.win.bind("<Return>", self._on_flash_enter)
+        self.win.bind("<KP_Enter>", self._on_flash_enter)
+
+    def _on_flash_enter(self, event) -> str | None:
+        self.toggle_answer()
+        return "break"
+
+    def _on_flash_left(self, event) -> str | None:
+        self.prev_card()
+        return "break"
+
+    def _on_flash_right(self, event) -> str | None:
+        self.next_card()
+        return "break"
 
     def render_card(self) -> None:
         q_num = self.q_numbers[self.index]

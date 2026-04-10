@@ -1,252 +1,237 @@
 ===== Q1.webp =====
-Kizspy | Question: 1 True or False: A Project is defined as being unique and temporary, with an defined start and finish.
-(Choose 1 answer) A. True
+Question: 1 True or False: A Project is defined as being unique and temporary, with an defined start and finish
+(Choose 1 answer)
+A. True
 B. False
 
 ===== Q2.webp =====
-Kizspy | Question: 2 In a matrix-based organization:
-
-(Choose 1 answer) A. Team members are always assigned to the project full time.
+Question: 2 In a matrix-based organization
+(Choose 1 answer)
+A. Team members are always assigned to the project full time.
 B. A project manager is not assigned to the team.
 C. The project manager acts as manager of the team.
 D. The functional manager has stronger power than the project manager's power.
-E. The power of project manager and the power of managers of teams are depending on the organization's
-specific matrix type.
+E. The power of project manager and the power of managers of teams are depending on the organization's specific matrix type.
 
 ===== Q3.webp =====
-Kizspy | Question: 3 You have finished planning and have begun executing the project when the client asks if you would shorten the
-project duration so that the project can finish 2 weeks earlier than the original plan. How are the triple
-
-(Choose 1 answer) constraints affected?
+Question: 3 You have finished planning and have begun executing the project when the client asks if you would shorten the project duration so that the project can finish 2 weeks earlier than the original plan. How are the triple constraints affected?
+(Choose 1 answer)
 A. Scope and cost may both be affected
 B. Neither scope nor cost will be affected in any situation
 C. Cost will reduce as the project duration is shortened and scope is not changed
 D. There is no relevant option except the project must be cut down on scope
 
 ===== Q4.webp =====
-Kizspy | Question: 4 A project manager has little project experience, but she has been assigned as the project manager of a new
-project. Because she will be working in a matrix organization to complete her project, she can expect
-(Choose 1 answer) communications to be
+Question: 4 A project manager has little project experience, but she has been assigned as the project manager of a new project. Because she will be working in a matrix organization to complete her project, she can expect communications to be
+(Choose 1 answer)
 A. Simple
 B. Open and accurate
 C. Complex
 D. Hard to automate
 
 ===== Q5.webp =====
-Kizspy | Question: 5 Which of the following best describes a project management plan?
-(Choose 1 answer) A. A printout from project management software
+Question: 5 Which of the following best describes a project management plan?
+(Choose 1 answer)
+A. A printout from project management software
 B. A bar chart
 C. Scope, risk, resource, and other management plan
 D. A project schedule
 
 ===== Q6.webp =====
-Kizspy | Question: 6 True or False: The Project Charter is a document that formally authorizes the existence of a project. It also
-document initial requirements that satisfy the stakeholder's needs and expectations.
-(Choose 1 answer) A. False
+Question: 6 True or False: The Project Charter is a document that formally authorizes the existence of a project. It also document initial requirements that satisfy the stakeholder's needs and expectations
+(Choose 1 answer)
+A. False
 B. True
 
 ===== Q7.webp =====
-Kizspy | Question: 7 Which one is not the causes of scope creep?
-(Choose 1 answer) A. Poorly defined objectives
+Question: 7 Which one is not the causes of scope creep?
+(Choose 1 answer)
+A. Poorly defined objectives
 B. Lack of defined change control process
 C. Changing stakeholder perspectives
 D. Increased understanding of what is takes to get it done
 E. Ability to say “NO*
 
 ===== Q8.webp =====
-Kizspy | Question: 8 To ensure control over the incidence and frequency of change, the project manager establishes a:
-A. Work breakdown structure
-
+Question: 8 To ensure control over the incidence and frequency of change, the project manager establishes a
 (Choose 1 answer)
+A. Work breakdown structure (Choose 1 answer)
 B. Responsibility assignment matrix
 C. Work procedure schedule
 D. Change control process
 
 ===== Q9.webp =====
-Kizspy | Question: 9 Which of the following is NOT the output of Plan Scope Management process? (Choose 2 answers)
-(Choose 2 answers) A. Scope Management Plan
+Question: 9 Which of the following is NOT the output of Plan Scope Management process?
+(Choose 2 answers)
+A. Scope Management Plan
 B. Requirement Management Plan
 C. Time Management Plan
 D. Cost Management Plan
 
 ===== Q10.webp =====
-Kizspy | Question: 10 Should the Project Scope Statement document include?
-(Choose 1 answer) A. Acceptance criteria
+Question: 10 Should the Project Scope Statement document include?
+(Choose 1 answer)
+A. Acceptance criteria
 B. Milestones
 C. WBS (Work Breakdown Structure)
 D. WBS Dictionary
 
 ===== Q11.webp =====
-Kizspy | Question: 11 You are the project manager of the large project and you are requesting your team members to create the
-work breakdown structure. Some of team members are angry that you are asking them to do “extra work”.
-Which of the following is the best thing you could tell the members to convince them to use work breakdown
-(Choose 1 answer) 2
-structure?
+Question: 11 You are the project manager of the large project and you are requesting your team members to create the work breakdown structure. Some of team members are angry that you are asking them to do “extra work” Which of the following is the best thing you could tell the members to convince them to use work breakdown 2 structure?
+(Choose 1 answer)
 A. Work breakdown structure will prevent work from slipping through the cracks
 B. Work breakdown structure is of greater value on large project
 C. Work breakdown structure is best when the project involves contracts
 D. Work breakdown structure is the only way to identify risks
 
 ===== Q12.webp =====
-Kizspy | Question: 12 During project executing, a team member comes to the project manager because he is not sure what work he
-needs to accomplish on the project. Which of the following documents contains detailed descriptions of work
-packages?
-
+Question: 12 During project executing, a team member comes to the project manager because he is not sure what work he needs to accomplish on the project. Which of the following documents contains detailed descriptions of work packages?
 (Choose 1 answer)
-
 A. WBS dictionary
 B. Activity list
 C. Project scope statement
 D. Scope management plan
 
 ===== Q13.webp =====
-Kizspy | Question: 13 The network diagram can be used to:
-
-(Choose 1 answer) A. Control the cost performance of the project
+Question: 13 The network diagram can be used to
+(Choose 1 answer)
+A. Control the cost performance of the project
 B. Show project schedule performance over time
 C. Identify project resource requirements
 D. Identify opportunities to compress the project schedule
 E. Help to justify project quality metrics
 
 ===== Q14.webp =====
-Kizspy | Question: 14 If "develop online modules” needs to begin before "review online modules" can begin, that is called a:
-(Choose 1 answer) A. Finish to start relationship.
+Question: 14 If "develop online modules” needs to begin before "review online modules" can begin, that is called a
+(Choose 1 answer)
+A. Finish to start relationship.
 B. Start to finish relationship.
 C. Finish to finish relationship.
 D. Start to start relationship.
 
 ===== Q15.webp =====
-Kizspy | Question: 15 To calculate late start (LS) of an activity, you will
-A. Take its late finish minus its estimated duration.
-
+Question: 15 To calculate late start (LS) of an activity, you will
 (Choose 1 answer)
+A. Take its late finish minus its estimated duration. (Choose 1 answer)
 B. Take its early finish minus its estimated duration.
 C. Take its early start plus its estimated duration.
 D. Take its early start.
 
 ===== Q16.webp =====
-Kizspy | Question: 16 True or False: The Forward Pass is used through the activities to determine the total duration of the project.
-(Choose 1 answer) A. True
+Question: 16 True or False: The Forward Pass is used through the activities to determine the total duration of the project
+(Choose 1 answer)
+A. True
 B. False
 
 ===== Q17.webp =====
-Kizspy | Question: 17 True or False: The Fast Tracking is the approach to re-plan the work and try to perform more overlapping
-sequential activities to be in parallel.
-(Choose 1 answer) A. True
+Question: 17 True or False: The Fast Tracking is the approach to re-plan the work and try to perform more overlapping sequential activities to be in parallel
+(Choose 1 answer)
+A. True
 B. False
 
 ===== Q18.webp =====
-Kizspy | Question: 18 A cost can be either variable or fixed. Which of the following statements are correct (choose 2 answers)?
-ch 2 A. Variable costs: These costs change with the amount of production. Examples include the cost of material,
-
-(Choose 2 answers) supplies, and wages.
-B. Fixed costs: These costs do not change as production changes. Examples include the cost of setup, rent,
-utilities, etc.
-C. Fixed costs: These costs change with the amount of production. Examples include the cost of material,
-supplies, and wages.
-D. Variable costs: These costs do not change as production changes. Examples include the cost of setup,
-rent, utilities, etc.
+Question: 18 A cost can be either variable or fixed. Which of the following statements are correct ? ch 2 A. Variable costs: These costs change with the amount of production. Examples include the cost of material supplies, and wages
+(Choose 2 answers)
+B. Fixed costs: These costs do not change as production changes. Examples include the cost of setup, rent, utilities, etc.
+C. Fixed costs: These costs change with the amount of production. Examples include the cost of material, supplies, and wages.
+D. Variable costs: These costs do not change as production changes. Examples include the cost of setup, rent, utilities, etc.
 
 ===== Q19.webp =====
-Kizspy | Question: 19 Which of the following is NOT the advantages of top-down estimating?
-(Choose 1 answer) A. Quick
+Question: 19 Which of the following is NOT the advantages of top-down estimating?
+(Choose 1 answer)
+A. Quick
 B. Activities do not need to be identified
 C. Less costly to create
 D. More accurate
 
 ===== Q20.webp =====
-Kizspy | Question: 20 Which one of these most correctly defines contingency reserve?
-(Choose 1 answer) A. Per our lesson, management reserve and contingency are exactly the same.
+Question: 20 Which one of these most correctly defines contingency reserve?
+(Choose 1 answer)
+A. Per our lesson, management reserve and contingency are exactly the same.
 B. Contingency reserve is not tied to any specific work packages nor activities.
 C. Contingency reserve is tied to specific work packages or activities.
 D. Contingency reserve is tied to only one specific milestone.
 
 ===== Q21.webp =====
-Kizspy | Question: 21 Earned value management integrates scope, cost, and schedule measures to:
-A. assess communication effectiveness among project team members.
+Question: 21 Earned value management integrates scope, cost, and schedule measures to
 (Choose 1 answer)
+A. assess communication effectiveness among project team members. (Choose 1 answer)
 B. assess whether all requirements were met.
 C. develop a preliminary budget.
 D. assess project performance and progress.
 
 ===== Q22.webp =====
-Kizspy | Question: 22 The discipline of quality management complements the discipline of project management. Both recognize all
-but one of the following:
-
-(Choose 1 answer) A. Customer satisfaction
+Question: 22 The discipline of quality management complements the discipline of project management. Both recognize all but one of the following
+(Choose 1 answer)
+A. Customer satisfaction
 B. Prevention over inspection
 C. Continuous improvement
 D. Project manager responsibility
 
 ===== Q23.webp =====
-Kizspy | Question: 23 True or False: Product quality focuses on the project management processes used to meet project objectives.
-(Choose 1 answer) A. False
+Question: 23 True or False: Product quality focuses on the project management processes used to meet project objectives
+(Choose 1 answer)
+A. False
 B. True
 
 ===== Q24.webp =====
-Kizspy | Question: 24 The Process Improvement Plan is:
-(Choose 1 answer) A. The number one component of the project management plan.
+Question: 24 The Process Improvement Plan is
+(Choose 1 answer)
+A. The number one component of the project management plan.
 B. A subsidiary, or component of the project management plan.
 
 ===== Q25.webp =====
-Kizspy | Question: 25 True or False: Your role as the project manager during quality assurance is to work with a quality assurance
-manager who will create a test plan and test cases which will be used to test the product you are creating in
-order to prevent defects from reaching your customer.
-
+Question: 25 True or False: Your role as the project manager during quality assurance is to work with a quality assurance manager who will create a test plan and test cases which will be used to test the product you are creating in order to prevent defects from reaching your customer
 (Choose 1 answer)
-
 A. False
 B. True
 
 ===== Q26.webp =====
-Kizspy | Question: 26 True or False: Performing quality control within the context of a project involves applying the planned,
-systematic quality activities to ensure that the project correctly employs all processes needed to meet project
-objectives and product requirements.
-
+Question: 26 True or False: Performing quality control within the context of a project involves applying the planned systematic quality activities to ensure that the project correctly employs all processes needed to meet project objectives and product requirements
 (Choose 1 answer)
-
 A. False
 B. True
 
 ===== Q27.webp =====
-Kizspy | Question: 27 True or False: Influence means you have the right to apply resources, make decisions and give approvals.
-(Choose 1 answer) A. False
+Question: 27 True or False: Influence means you have the right to apply resources, make decisions and give approvals
+(Choose 1 answer)
+A. False
 B. True
 
 ===== Q28.webp =====
-Kizspy | Question: 28 True or False: Project Human Resource Management includes the processes that define the tasks and assign
-them to suitable resources, and motivate project team to complete the tasks.
-(Choose 1 answer) A. False
+Question: 28 True or False: Project Human Resource Management includes the processes that define the tasks and assign them to suitable resources, and motivate project team to complete the tasks
+(Choose 1 answer)
+A. False
 B. True
 
 ===== Q29.webp =====
-Kizspy | Question: 29 Which one is correct view of conflict?
-(Choose 1 answer) A. Caused by troublemakers
+Question: 29 Which one is correct view of conflict?
+(Choose 1 answer)
+A. Caused by troublemakers
 B. Always bad
 C. Natural result of change
 D. Must be suppressed
 
 ===== Q30.webp =====
-Kizspy | Question: 30 Which one of below situations is not correct when discussing about Responsibility Assignment Matrix?
-A. Two team members are consulted about the same task.
-
+Question: 30 Which one of below situations is not correct when discussing about Responsibility Assignment Matrix?
 (Choose 1 answer)
+A. Two team members are consulted about the same task. (Choose 1 answer)
 B. Two team members are informed about the same task.
 C. Two team members are responsible for the same task.
 D. Two team members are accountable for the same task.
 
 ===== Q31.webp =====
-Kizspy | Question: 31 Some of the major sources of conflict that a project manager may influence are:
-(Choose 1 answer) A. Project management, project priorities, project team
+Question: 31 Some of the major sources of conflict that a project manager may influence are
+(Choose 1 answer)
+A. Project management, project priorities, project team
 B. Personality conflict, schedules, resources
 C. Project charter, schedules, resources
 D. Personality conflict, network diagram, resources
 
 ===== Q32.webp =====
-Kizspy | Question: 32 Which one of these is not the approaches to conflict discussed in the Project Human Resources
-Management Lesson?
-
-(Choose 1 answer) A. Confronting
+Question: 32 Which one of these is not the approaches to conflict discussed in the Project Human Resources Management Lesson?
+(Choose 1 answer)
+A. Confronting
 B. Compromising
 C. Smoothing
 D. Forcing
@@ -254,151 +239,139 @@ E. Avoiding
 F. Challenging
 
 ===== Q33.webp =====
-Kizspy | Question: 33 What does RAM stand for:
-(Choose 1 answer) A. Responsibility Action Matrix
+Question: 33 What does RAM stand for
+(Choose 1 answer)
+A. Responsibility Action Matrix
 B. Responsibility Activity Matrix
 C. Responsibility Ambiguity Matrix
 D. Responsibility Assignment Matrix
 
 ===== Q34.webp =====
-Kizspy | Question: 34 true or false, a project manager spend most of his/her time communicating.
-(Choose 1 answer) A. False
+Question: 34 true or false, a project manager spend most of his/her time communicating
+(Choose 1 answer)
+A. False
 B. True
 
 ===== Q35.webp =====
-Kizspy | Question: 35 You are beginning to staff your project. Which of the following will NOT be used in developing and/or
-communicating roles and responsibilities?
-(Choose 1 answer) A. WBS
+Question: 35 You are beginning to staff your project. Which of the following will NOT be used in developing and/or communicating roles and responsibilities?
+(Choose 1 answer)
+A. WBS
 B. Pareto chart
 C. Responsibility Assignment Matrix
 D. Organization chart
 
 ===== Q36.webp =====
-Kizspy | Question: 36 Upward communication is communication to/from:
-(Choose 1 answer) A. Your senior management.
+Question: 36 Upward communication is communication to/from
+(Choose 1 answer)
+A. Your senior management.
 B. Your social groups.
 C. Your direct reports.
 D. Your peers.
 
 ===== Q37.webp =====
-Kizspy | Question: 37 Which one is the correct matching of communication methods and the explanations?
-Communication methods:
-
-(Choose 1 answer) 0) mreractive
-(3) Pull
-Explanations:
-(a) Between two or more parties and multidirectional; the most efficient way to ensure common understanding.
-(b) Sent to recipients; does not ensure it was actually received and understood.
-(c) Recipients must access the information; works for large amounts of information or large audiences, each
-recipient accesses at their own discretion.
+Question: 37 Which one is the correct matching of communication methods and the explanations? Communication methods 0) mreractive (3) Pull Explanations (a) Between two or more parties and multidirectional; the most efficient way to ensure common understanding (b) Sent to recipients; does not ensure it was actually received and understood (c) Recipients must access the information; works for large amounts of information or large audiences, each recipient accesses at their own discretion
+(Choose 1 answer)
 A. (1)&(a), (2)&(b), (3)&(c)
 B. (1)&(a), (2)&(c), (3)&(b)
-C. (1&(b), (2)&(c), (3)&(a)
+C. (1)&(b), (2)&(c), (3)&(a)
 D. (1)&(b), (2)&(a), (3)&(c)
 E. (1)&(c), (2)&(a), (3)&(b)
 F. (1)&(c), (2)&(b), (3)&(a)
 
 ===== Q38.webp =====
-Kizspy | Question: 38 True or False: Performance reporting aims to inform stakeholders the good achievements of the project's
-objectives weekly or monthly.
-(Choose 1 answer) A. True
+Question: 38 True or False: Performance reporting aims to inform stakeholders the good achievements of the project's objectives weekly or monthly
+(Choose 1 answer)
+A. True
 B. False
 
 ===== Q39.webp =====
-Kizspy | Question: 39 True or False: A positive risk is an opportunity; a negative risk is a threat.
-(Choose 1 answer) A. False
+Question: 39 True or False: A positive risk is an opportunity; a negative risk is a threat
+(Choose 1 answer)
+A. False
 B. True
 
 ===== Q40.webp =====
-Kizspy | Question: 40 True or False: Risk management is one-time process. You need to plan for all possible risks at the project
-beginning and then follow defined actions to control those risks until they are closed or cancelled.
-(Choose 1 answer) A. False
+Question: 40 True or False: Risk management is one-time process. You need to plan for all possible risks at the project beginning and then follow defined actions to control those risks until they are closed or cancelled
+(Choose 1 answer)
+A. False
 B. True
 
 ===== Q41.webp =====
-Kizspy | Question: 41 If the response you choose is to mitigate a risk this means that:
-(Choose 1 answer) A. You actively do not consider the risk but establish contingency plan.
-B. You change your plans so that you eliminate the risk.
-©. You change your plan so that another party will be responsible for the risk.
+Question: 41 If the response you choose is to mitigate a risk this means that
+(Choose 1 answer)
+A. You actively do not consider the risk but establish contingency plan.
+B. You change your plans so that you eliminate the risk. ©. You change your plan so that another party will be responsible for the risk.
 D. You create your plan to reduce the probability and/or the impact of the risk.
 
 ===== Q42.webp =====
-Kizspy | Question: 42 When you and your team know that a negative risk has a high likelihood of occurring and it will be very
-impactful if it does:
-
-(Choose 1 answer) A. You should not document the risk; it will upset your stakeholders.
+Question: 42 When you and your team know that a negative risk has a high likelihood of occurring and it will be very impactful if it does
+(Choose 1 answer)
+A. You should not document the risk; it will upset your stakeholders.
 B. You should develop a response to handle this risk.
 C. You should all hope this risk does not occur.
 D. You should wait a few weeks and see what changes.
 
 ===== Q43.webp =====
-Kizspy | Question: 43 Who is the stakeholder that has the most influence on your current running project?
-(Choose 1 answer) A. Project Team
+Question: 43 Who is the stakeholder that has the most influence on your current running project?
+(Choose 1 answer)
+A. Project Team
 B. Investors
 C. Competitors
 D. Sponsor
 
 ===== Q44.webp =====
-Kizspy | Question: 44 One way to classify your stakeholders is to use the Power/Interest Grid. If a stakeholder is low interest / high
-power, what should the Project Manager do?
-
-(Choose 1 answer) A. Monitor
+Question: 44 One way to classify your stakeholders is to use the Power/Interest Grid. If a stakeholder is low interest / high power, what should the Project Manager do?
+(Choose 1 answer)
+A. Monitor
 B. Keep satisfied
 C. Manage closely
 D. Keep informed
 
 ===== Q45.webp =====
-Kizspy | Question: 45 You just came from a meeting with one of your project stakeholders, he knew well about your project and also
-its potential impacts, and actively engaged in ensuring that the project is a success. How would you classify
-him?
-
+Question: 45 You just came from a meeting with one of your project stakeholders, he knew well about your project and also its potential impacts, and actively engaged in ensuring that the project is a success. How would you classify him?
 (Choose 1 answer)
-
 A. Supportive
 B. Neutral
 C. Unaware
 D. Leading
 
 ===== Q46.webp =====
-Kizspy | Question: 46 Identify the five engagement levels of stakeholders:
-(Choose 1 answer) A. Unaware, resistant, strong-willed, supportive, leading
+Question: 46 Identify the five engagement levels of stakeholders
+(Choose 1 answer)
+A. Unaware, resistant, strong-willed, supportive, leading
 B. Unaware, resistant, neutral, supportive, leading
 C. Unaware, resistant, strong-willed, supportive, sponsor
 D. Unaware, resistant, neutral, supportive, oblivious
 
 ===== Q47.webp =====
-Kizspy | Question: 47 Your stakeholder register should not contain:
-(Choose 1 answer) A. Identification information
+Question: 47 Your stakeholder register should not contain
+(Choose 1 answer)
+A. Identification information
 B. Assessment information
 C. Stakeholder classification
 D. Scope information
 
 ===== Q48.webp =====
-Kizspy | Question: 48 Given 14.000 USD is the most likely of the estimated cost of the activity, 8.Q00USD is the optimistic value and
-26.000USD is the pessimistic one. By using the PERT (Program Evaluation and Review Technique) analysis
-(Choose 1 answer) to calculate the expected activity cost, which of the following is the result?
+Question: 48 Given 14.000 USD is the most likely of the estimated cost of the activity, 8.Q00USD is the optimistic value and 26.000USD is the pessimistic one. By using the PERT (Program Evaluation and Review Technique) analysis to calculate the expected activity cost, which of the following is the result?
+(Choose 1 answer)
 A. 16.000 USD
 B. 12.000 USD
 C. 15.000 USD
 D. 21.000 USD
 
 ===== Q49.webp =====
-Kizspy | Question: 49
+Question: 49 You have a project to build a new fence. The fence will form a square. Each side is to take one day to build, and $1,000 has been budgeted per side. The sides are planned to be completed one after the other. Today is the end of day 3 Using the following project status chart to calculate project current CY: Ne
 (Choose 1 answer)
-You have a project to build a new fence. The fence will form a square. Each side is to take one day to build, and $1,000
-has been budgeted per side. The sides are planned to be completed one after the other. Today is the end of day 3.
-Using the following project status chart to calculate project current CY: Ne
 A. CV = $150
 B. CV = $250
-c. cv = $100
+C. cv = $100
 D. CV = $200
-E.CV=$50
+E. CV=$50
 F. CV = $300
 
 ===== Q50.webp =====
-Kizspy | Question: 50 In Earned Value Management Technique, you can compute the Schedule Performance Index (SPI) by applying
-which of following formula?
-(Choose 1 answer) A. SPI=EV/PV
-B. SPI=SV/PV
-Cc. SPI=CV/ PV
+Question: 50 In Earned Value Management Technique, you can compute the Schedule Performance Index (SPI) by applying which of following formula?
+(Choose 1 answer)
+A. SPI=EV/PV
+B. SPI=SV/PV Cc. SPI=CV/ PV
 D. SPI=AC/ PV

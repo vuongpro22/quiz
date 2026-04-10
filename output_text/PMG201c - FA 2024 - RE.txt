@@ -1,0 +1,356 @@
+===== Q1.webp =====
+Question: 1 Identify the five engagement levels of stakeholders
+(Choose 1 answer)
+A. Unaware, resistant, strong-willed. supportive. leading
+B. Unaware, resistant, neutral, supportive, leading
+C. Unaware, resistant, strong-willed. supportive. sponsor
+D. Unaware, resistant, neutral, supportive, oblivious
+
+===== Q2.webp =====
+Question: 2 True or False: An important part of the project scope statement is exclusions or out of scope items
+(Choose 1 answer)
+A. False
+B. True
+
+===== Q3.webp =====
+Question: 3 True or False: If "develop online modules" must be 100% completed before "review online modules” can begin that is called a finish to start relationship
+(Choose 1 answer)
+A. True
+B. False
+
+===== Q4.webp =====
+Question: 4 When you schedule work in a specific order because it cannot be completed any other way, what is the type of dependency used?
+(Choose 1 answer)
+A. Discretionary
+B. Internal
+C. Mandatory
+D. External
+
+===== Q5.webp =====
+Question: 5 True or False: Product quality focuses on the project management processes used to meet project objectives
+(Choose 1 answer)
+A. False
+B. True
+
+===== Q6.webp =====
+Question: 6 Which one is not the causes of scope creep?
+(Choose 1 answer)
+A. Poorly defined objectives
+B. Lack of defined change contro! process
+C. Changing stakeholder perspectives
+D. Increased understanding of what is takes to get it done
+E. Ability to say “NO”
+
+===== Q7.webp =====
+Question: 7 A project manager may use to make sure the team members clearly know what is included in each of their work packages
+(Choose 1 answer)
+A. The project scope statement
+B. The product scope
+C. The WBS dictionary
+D. The WBS
+
+===== Q8.webp =====
+Question: 8 True or False: Performing quality assurance within the context of a project involves applying the planned systematic quality activities to ensure that the project correctly employs all processes needed to meet project objectives and product requirements
+(Choose 1 answer)
+A. False
+B. True
+
+===== Q9.webp =====
+Question: 9 True or False: The danger of estimating using the same parametric model is the no longer applicable of historical data
+(Choose 1 answer)
+A. True
+B. False
+
+===== Q10.webp =====
+Question: 10 (Choose | answer) Which of the following is true about the development of a project charter?
+(Choose 1 answer)
+A. The sponsor creates the project charter. and the project manager approves it
+B. The project team creates the project charter. and the PMO (Project Management Office) approves it
+C. The executive manager creates the project charter, and the functional manager approves it
+D. The project manager creates the project charter, and the sponsor approves tt
+
+===== Q11.webp =====
+Question: 11 True or False: The term resources refers to not only people, it also includes money or materials or equipment
+(Choose 1 answer)
+A. True
+B. False
+
+===== Q12.webp =====
+Question: 12 True or False: The Backward Pass is used through the activities to determine the critical path & available float of the project
+(Choose 1 answer)
+A. True
+B. False
+
+===== Q13.webp =====
+Question: 13 In a project context. risk is defined as
+(Choose 1 answer)
+A. The probability of an event having a positive or negative effect on at least one project objective.
+B. The impact of not completing the project on time and within budget.
+C. An uncertain event that, if it occurs, will have a positive or negative effect on at least one project objective.
+D. An uncertain event that, if it occurs, will have a negative effect on at least one project objective.
+
+===== Q14.webp =====
+Question: 14 (Choose | answer) True or False: Project Manager should consider using milestones for high level reporting
+(Choose 1 answer)
+A. True
+B. False
+
+===== Q15.webp =====
+Question: 15 As discussed in the Project Management course, The PMBOK® Guide describes 10 Project Management Knowledge Areas. Identify 3 out of the 10
+(Choose 1 answer)
+A. Cost, Scope. Time
+B. Quality. Process. Scope
+C. Cost, Integration, Process
+D. Contracts, Process, Risk
+
+===== Q16.webp =====
+Question: 16 Which of the following best describes a project management plan?
+(Choose 1 answer)
+A. A printout from project management software
+B. Abar chart
+C. Scope, risk, resource, and other management plan
+D. A project schedule
+
+===== Q17.webp =====
+Question: 17 The foltewing table ts an activity list that includes the Activity Du ration Predecessor duration and predecessor for a series of project activities. What is the duration of the critical path?
+(Choose 1 answer)
+
+===== Q18.webp =====
+Question: 18 (Choose | answer) True or False: The Project Budget is equal to only the Cost Baseline budget
+(Choose 1 answer)
+A. True
+B. False
+
+===== Q19.webp =====
+Question: 19 (Choose | answer) All of the following are inputs to estimating activity durations except
+(Choose 1 answer)
+A. Enterprise Environmental Factors & Organizational Process Assets
+B. Risk Register & Scope Statement
+C. Project Documents Updates & Requirements Specifications
+D. Resource Calendars & Resource Breakdown Structure
+
+===== Q20.webp =====
+Question: 20 True or False: A Work Breakdown Structure (WBS) is a deliverable-oriented hierarchical decomposition of the work to be executed just by the Project Manager
+(Choose 1 answer)
+A. False
+B. True
+
+===== Q21.webp =====
+Question: 21 Which one of these is the correct view of conflict?
+(Choose 1 answer)
+A. Inevitable
+B. Always bad
+C. Should be avoided
+D. Must be suppressed
+
+===== Q22.webp =====
+Question: 22 What description defines Bottoms Up Estimating?
+(Choose 1 answer)
+A. A technique that analyzes activities on past projects and using them as a basis for estimating costs.
+B. A technique that uses a mathematical model to estimate costs.
+C. A technique that involves estimating the cost of individual work packages or individual schedule activities with the lowest level of detail.
+
+===== Q23.webp =====
+Question: 23 The discipline of quality management complements the discipline of project management. Both recognize all but one of the following
+(Choose 1 answer)
+A. Customer satisfaction
+B. Prevention over inspection
+C. Continuous improvement
+D. Project team responsibility
+
+===== Q24.webp =====
+Question: 24 The purpose of capturing lessons learned is
+(Choose 1 answer)
+A. To show stakeholders how difficult the project was so that next time their demands will not be so high.
+B. To capture project failures so that you can avoid the reasons for failure next time.
+C. To document who performed well on the project and who did not so that poor performers can be punished.
+D. To show that you are following project management best practices and therefore you are a superior project manager.
+
+===== Q25.webp =====
+Question: 25 True or False: The primary output from the identification of risks is the stakeholder register
+(Choose 1 answer)
+A. False
+B. True
+
+===== Q26.webp =====
+Question: 26 You and your team have identified a risk that is a threat to your ability to successfully meet project objectives The risk involves team members from your company performing work which requires training. certification and many hours of experience. You have one newly certified team member and others who are still in training Which do you think is your best response to this risk?
+(Choose 1 answer)
+A. Acknowledge your lack of expertise and set aside some contingency reserve to cover the risk.
+B. Change the scope of the project so that this type of work is excluded and introduce a new risk, that of an unhappy sponsor
+C. Let the team do the work and see what happen. do not prepare any other response.
+D. You have budget to hire external resources and there is a vendor you can hire who specialized in this type of work, hire them.
+
+===== Q27.webp =====
+Question: 27 True or False: A Project is defined as being unique and temporary. with an undefined start and finish
+(Choose 1 answer)
+A. True
+B. False
+
+===== Q28.webp =====
+Question: 28 The definition of a stakeholder includes
+(Choose 1 answer)
+A. People and organizations that are not impacted by your project.
+B. Organizations impacted by your project but not people. they are all part of the impacted organizations.
+C. The people or organizations that are positively or negatively impacted by your project.
+D. People who are impacted by your project, but not organizations impacted by your project.
+
+===== Q29.webp =====
+Question: 29 You are beginning to staff your project. Which of the following will be used in developing and/or communicating roles and responsibilities?
+(Choose 1 answer)
+A. Control chart
+B. Run chart
+C. Pareto chart
+D. Organization chart
+
+===== Q30.webp =====
+Question: 30 To calculate late start (LS) of an activity, you will
+(Choose 1 answer)
+A. Take its late finish minus its estimated duration.
+B. Take its early finish minus its estimated duration.
+C. Take its early start plus its estimated duration.
+D. Take its early start
+
+===== Q31.webp =====
+Question: 31 True or False: The Process Improvement Plan is a component of the project management plan that details how project management and development processes are to be analyzed in order to identify how to reduce their value
+(Choose 1 answer)
+A. False
+B. True
+
+===== Q32.webp =====
+Question: 32 (Choose | answer) Which of the following is NOT the disadvantages of top-down estimating?
+(Choose 1 answer)
+A. Costly to create
+B. Less accurate
+C. Requires considerable experience to do well
+D. Does not take into account the differences between projects
+
+===== Q33.webp =====
+Question: 33 Your project has a team of which consists of yourself, a tester, five developers and a communicator. How many communication channels on your team?
+(Choose 1 answer)
+
+===== Q34.webp =====
+Question: 34 Consider a scenario in which you learn that your project is running two weeks behind schedule. How would you know if it is acceptable to be two weeks late?
+(Choose 1 answer)
+A. Ask your executive management team
+B. If the schedule baseline shows you are two weeks late, then it is not acceptable
+C. If the team tells you the work cannot be completes any earlier than it is acceptable
+D. Your variance thresholds should be documented in your project management plan. look there for guidance.
+
+===== Q35.webp =====
+Question: 35 A project manager's primary responsibility 1s to deliver the product of the project within project constraints Actions taken and changes made to the benefit of one constraint could negatively affect another. Which of the following best describes the major constraints on a project?
+(Choose 1 answer)
+A. Scope. number of resources. and cost
+B. Scope. cost. and schedule
+C. Scope, schedule, cost. quality, risk, resources. and customer satisfaction
+D. Schedule. cost, and number of changes
+
+===== Q36.webp =====
+Question: 36 True or False: Your project might pay more in order to reduce the schedule when using Crashing approach but that is not often true if using Fast Tracking approach
+(Choose 1 answer)
+A. True
+B. False
+
+===== Q37.webp =====
+Question: 37 During status review meetings to evaluate project performance and progress. which tool or technique is NOT preferred to use?
+(Choose 1 answer)
+A. Variance analysis
+B. Trend analysis
+C. Earned Value Management (EVM)
+D. Requirement analysis
+
+===== Q38.webp =====
+Question: 38 Two team members disagree on how to Solve a project issue. They express their disagreement and then engage in a professional debate. This is an example of
+(Choose 1 answer)
+A. Unrealistic conflict.
+B. Unproductive conflict.
+C. Healthy conflict.
+D. Unhealthy confit.
+
+===== Q39.webp =====
+Question: 39 Which one ts not the different between assumptions and constraints?
+(Choose 1 answer)
+A. Assumptions are believed to be true. while constraints are true in nature.
+B. Constraints are believed to be true, while assumptions are true in nature.
+C. Assumptions are good for the project. while constraints are not good, most of the time.
+D. If assumptions become false, it ts bad news for the project. However. if constraints are false, it is good.
+
+===== Q40.webp =====
+Question: 40 If the response you choose Is to exploit a risk this means that
+(Choose 1 answer)
+A. You actively do not consider the risk but establish contingency plan.
+B. You add steps to your plans to make certain the opportunity is captured.
+C. You change your plan so that another party will be responsible for a partial amount of ownership of the opportunity.
+D. You create your plan to increase the probability and/or the impact of the opportunity.
+
+===== Q41.webp =====
+Question: 41 (Choose | answer) When you use the RACI or Responsible, Accountable, Consult, Inform version of the RAM. those responsible persons are
+(Choose 1 answer)
+A. Providing subject matter expertise
+B. Supervising the work
+C. Not completing the work
+D. Completing the work
+
+===== Q42.webp =====
+Question: 42 True or False: Performing quality control within the context of a project involves taking actions to eliminate causes of unsatisfactory project performance
+(Choose 1 answer)
+A. False
+B. True
+
+===== Q43.webp =====
+Question: 43 Lateral communication is NOT communication to/from
+(Choose 1 answer)
+A. Your customers.
+B. Your friends.
+C. Your subordinates.
+D. Your peers
+
+===== Q44.webp =====
+Question: 44 True or False: In the context of a project. change is always a bad thing
+(Choose 1 answer)
+A. True
+B. False
+
+===== Q45.webp =====
+Question: 45 True or False: Effective project communication management creates a bridge between stakeholders based on a shared understanding of the project and the ongoing sharing of information needed for its success
+(Choose 1 answer)
+A. True
+B. False
+
+===== Q46.webp =====
+Question: 46 One way to classify your stakeholders is to use the Power/Interest Grid. If a stakeholder is low interest / high power. what should the Project Manager do?
+(Choose 1 answer)
+A. Monitor
+B. Keep satisfied
+C. Manage closely
+D. Keep informed
+
+===== Q47.webp =====
+Question: 47 True or False: In a projectized organization, team members are never assigned to the project full time
+(Choose 1 answer)
+A. True
+B. False
+
+===== Q48.webp =====
+Question: 48 Which one of these is not the approaches to conflict discussed in the Project Human Resources Management Lesson?
+(Choose 1 answer)
+A. Confronting
+B. Compromising
+C. Smoothing
+D. Forcing
+E. Avoiding
+F. Challenging
+
+===== Q49.webp =====
+Question: 49 Your Cost Performance Index (CPI) is lesser than 1 means you are
+(Choose 1 answer)
+A. on budget.
+B. under budget.
+C. over budget.
+
+===== Q50.webp =====
+Question: 50 You just came from a meeting with one of your project stakeholders, he knew about your project and was not against it, but did not seem to be particularly interested in it either. How would you classify him? (Choose | answer)
+(Choose 1 answer)
+A. Supportive
+B. Neutral
+C. Unaware
+D. Resistant

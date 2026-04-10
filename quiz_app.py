@@ -56,18 +56,28 @@ def parse_answers_csv(answer_path: Path) -> dict[int, set[str]]:
     return answers
 
 
-def split_question_blocks(content: str) -> list[str]:
-    blocks = [part.strip() for part in re.split(r"=+\s*Q\d+\.webp\s*=+", content) if part.strip()]
+def split_question_blocks(content: str) -> list[tuple[int, str]]:
+    pattern = re.compile(r"=+\s*Q(\d+)\.webp\s*=+", re.IGNORECASE)
+    matches = list(pattern.finditer(content))
+    blocks: list[tuple[int, str]] = []
+    for idx, match in enumerate(matches):
+        q_num = int(match.group(1))
+        start = match.end()
+        end = matches[idx + 1].start() if idx + 1 < len(matches) else len(content)
+        block_text = content[start:end].strip()
+        if block_text:
+            blocks.append((q_num, block_text))
     return blocks
 
 
-def parse_question(block: str) -> tuple[int, str, list[tuple[str, str]], int]:
+def parse_question(block: str, fallback_q_num: int) -> tuple[int, str, list[tuple[str, str]], int]:
     q_match = re.search(r"Question:\s*(\d+)\s*(.*)", block)
-    if not q_match:
-        raise ValueError("Question number not found in block.")
-
-    q_num = int(q_match.group(1))
-    question_line = q_match.group(2).strip()
+    if q_match:
+        q_num = int(q_match.group(1))
+        question_line = q_match.group(2).strip()
+    else:
+        q_num = fallback_q_num
+        question_line = ""
 
     choose_match = re.search(r"\(Choose\s+(\d+)\s+answers?\)", block, flags=re.IGNORECASE)
     choose_count = int(choose_match.group(1)) if choose_match else 1
@@ -79,6 +89,16 @@ def parse_question(block: str) -> tuple[int, str, list[tuple[str, str]], int]:
         clean_text = " ".join(text.replace("\n", " ").split())
         options.append((key.upper(), clean_text))
 
+    if not question_line:
+        lines = [ln.strip() for ln in block.splitlines() if ln.strip()]
+        for ln in lines:
+            if ln.startswith("(") or re.match(r"^[A-F]\.", ln):
+                continue
+            question_line = ln
+            break
+        if not question_line:
+            question_line = f"Question {q_num}"
+
     return q_num, question_line, options, choose_count
 
 
@@ -87,9 +107,9 @@ def parse_questions(question_path: Path) -> dict[int, dict]:
     blocks = split_question_blocks(content)
     questions: dict[int, dict] = {}
 
-    for block in blocks:
+    for header_q_num, block in blocks:
         try:
-            q_num, question_text, options, choose_count = parse_question(block)
+            q_num, question_text, options, choose_count = parse_question(block, header_q_num)
         except ValueError:
             continue
         questions[q_num] = {
