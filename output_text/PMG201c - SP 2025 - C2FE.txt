@@ -67,7 +67,7 @@ C. Good team relations
 D. Lack of a clear work breakdown structure
 
 ===== Q10.webp =====
-Question: 10 company procedtes require the creation of a lessons learned register. Which of the following is the best use
+Question: 10 company procedtes require the creation of a lessons learned register. Which of the following is the best use of lessons learned ?
 (Choose 1 answer)
 A. Historical records for future projects
 B. Planning record for the current project
@@ -99,7 +99,7 @@ C. Activities
 D. A list of risks
 
 ===== Q14.webp =====
-Question: 14 eee st thow work packages to make sure the team members clearly know what is included in
+Question: 14 A project manager may use _____ to make sure the team members clearly know what is included in each of their work packages.
 (Choose 1 answer)
 A. The project scope statement
 B. The product scope
@@ -149,13 +149,13 @@ A. False
 B. True
 
 ===== Q21.webp =====
-Question: 21 thep Sect The Backward Pass is used through the activities to determine the critical path & available float of
+Question: 21 True or False, The Backward Pass is used through the activities to determine the critical path & available float of the project
 (Choose 1 answer)
 A. True
 B. False 
 
 ===== Q22.webp =====
-Question: 22 Te oF False tre io wacking 's the approach to add more resources (labor, overtime, etc.) into the
+Question: 22 True oF False, the Fast Tracking is the approach to add more resources (labor, overtime, etc.) into the activities to reduce their durations.
 (Choose 1 answer)
 A. True
 B. False
@@ -189,13 +189,13 @@ A. True
 B. False 
 
 ===== Q27.webp =====
-Question: 27 pole or False: Earned value integrates schedule, budget and quality and uses monetary values to assess
+Question: 27 True or False: Earned value integrates schedule, budget and quality and uses monetary values to assess project status.
 (Choose 1 answer)
 A. False
 B. True 
 
 ===== Q28.webp =====
-Question: 28 B are Oscipine folewas management complements the discipline of project management. Both recognize all
+Question: 28 The discipline of quality management complements the discipline of project management.Both recognize all but one of the following: 
 (Choose 1 answer)
 A. Customer satisfaction
 B. Prevention over inspection
@@ -291,8 +291,8 @@ Question: 41  Which one is the correct matching of communication methods and the
 Communication methods: 
 (1) interactive 
 (2) push 
-(3) Pull Explanations 
-Scenarios:
+(3) Pull 
+Explanations : 
 (a) Between two or more parties and multidirectional; the most efficient way to ensure common understanding 
 (b) Sent to recipients; does not ensure it was actually received and understood 
 (c) Recipients must access the information; works for large amounts of information or large audiences, each recipient accesses at their own discretion
@@ -305,7 +305,7 @@ E. (1)&(c), (2)&(a), (3)&(b)
 F. (1)&(c), (2)&(b), (3)&(a)
 
 ===== Q42.webp =====
-Question: 42 sbict be neekly Or month yoporting aims to inform stakeholders the good achievements of the project’s
+Question: 42 True or False: Performance reporting aims to inform stakeholders the good achievements of the project’s objectives weekly or monthly.
 (Choose 1 answer)
 A. True
 B. False
@@ -351,7 +351,7 @@ E. Sponsor
 F. People that are not impacted by your project
 
 ===== Q48.webp =====
-Question: 48 power ey Ao classy your est Manages tc aise the Power/Interest Grid. If a stakeholder is low interest / low
+Question: 48 One way to classify your stakeholders is to use the Power/Interest Grid. If a stakeholder is low interest / low power, what should the Project manager do? 
 (Choose 1 answer)
 A. Monitor
 B. Keep satisfied
