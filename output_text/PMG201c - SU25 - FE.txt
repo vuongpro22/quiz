@@ -77,7 +77,7 @@ C. WBS (Work Breakdown Structure)
 D. WBS Dictionary
 
 ===== Q11.webp =====
-Question: 11 You are the project manager of the large project and you are requesting your team members to create the work breakdown structure. Some of team members are angry that you are asking them to do “extra work” Which of the following is the best thing you could tell the members to convince them to use work breakdown 2 structure?
+Question: 11 You are the project manager of the large project and you are requesting your team members to create the work breakdown structure. Some of team members are angry that you are asking them to do “extra work” Which of the following is the best thing you could tell the members to convince them to use work breakdown  structure?
 (Choose 1 answer)
 A. Work breakdown structure will prevent work from slipping through the cracks
 B. Work breakdown structure is of greater value on large project
@@ -130,8 +130,8 @@ A. True
 B. False
 
 ===== Q18.webp =====
-Question: 18 A cost can be either variable or fixed. Which of the following statements are correct ? ch 2 A. Variable costs: These costs change with the amount of production. Examples include the cost of material supplies, and wages
-(Choose 2 answers)
+Question: 18 A cost can be either variable or fixed. Which of the following statements are correct ? (Choose 2 answers)
+A. Variable costs: These costs change with the amount of production. Examples include the cost of material supplies, and wages
 B. Fixed costs: These costs do not change as production changes. Examples include the cost of setup, rent, utilities, etc.
 C. Fixed costs: These costs change with the amount of production. Examples include the cost of material, supplies, and wages.
 D. Variable costs: These costs do not change as production changes. Examples include the cost of setup, rent, utilities, etc.
@@ -269,7 +269,14 @@ C. Your direct reports.
 D. Your peers.
 
 ===== Q37.webp =====
-Question: 37 Which one is the correct matching of communication methods and the explanations? Communication methods 0) mreractive (3) Pull Explanations (a) Between two or more parties and multidirectional; the most efficient way to ensure common understanding (b) Sent to recipients; does not ensure it was actually received and understood (c) Recipients must access the information; works for large amounts of information or large audiences, each recipient accesses at their own discretion
+Question: 37 Which one is the correct matching of communication methods and the explanations? Communication methods :
+(1) mreractive 
+(2) Pull 
+(3)Pull
+Explanations:
+ (a) Between two or more parties and multidirectional; the most efficient way to ensure common understanding 
+ (b) Sent to recipients; does not ensure it was actually received and understood 
+ (c) Recipients must access the information; works for large amounts of information or large audiences, each recipient accesses at their own discretion
 (Choose 1 answer)
 A. (1)&(a), (2)&(b), (3)&(c)
 B. (1)&(a), (2)&(c), (3)&(b)
@@ -300,7 +307,8 @@ B. True
 Question: 41 If the response you choose is to mitigate a risk this means that
 (Choose 1 answer)
 A. You actively do not consider the risk but establish contingency plan.
-B. You change your plans so that you eliminate the risk. ©. You change your plan so that another party will be responsible for the risk.
+B. You change your plans so that you eliminate the risk. 
+C. You change your plan so that another party will be responsible for the risk.
 D. You create your plan to reduce the probability and/or the impact of the risk.
 
 ===== Q42.webp =====
@@ -352,7 +360,7 @@ C. Stakeholder classification
 D. Scope information
 
 ===== Q48.webp =====
-Question: 48 Given 14.000 USD is the most likely of the estimated cost of the activity, 8.Q00USD is the optimistic value and 26.000USD is the pessimistic one. By using the PERT (Program Evaluation and Review Technique) analysis to calculate the expected activity cost, which of the following is the result?
+Question: 48 Given 14.000 USD is the most likely of the estimated cost of the activity, 8.000USD is the optimistic value and 26.000USD is the pessimistic one. By using the PERT (Program Evaluation and Review Technique) analysis to calculate the expected activity cost, which of the following is the result?
 (Choose 1 answer)
 A. 16.000 USD
 B. 12.000 USD
@@ -373,5 +381,6 @@ F. CV = $300
 Question: 50 In Earned Value Management Technique, you can compute the Schedule Performance Index (SPI) by applying which of following formula?
 (Choose 1 answer)
 A. SPI=EV/PV
-B. SPI=SV/PV Cc. SPI=CV/ PV
+B. SPI=SV/PV 
+C. SPI=CV/ PV
 D. SPI=AC/ PV
