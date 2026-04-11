@@ -56,7 +56,7 @@ D. Increased understanding of what is takes to get it done
 E. Ability to say “NO”
 
 ===== Q8.webp =====
-Question: 8 OO OO ae nal eealll True or False: Unregulated changes allow for innovation and flexibility. Regulating changes causes a lack of creativity
+Question: 8  True or False: Unregulated changes allow for innovation and flexibility. Regulating changes causes a lack of creativity
 (Choose 1 answer)
 A. True
 B. False
@@ -78,7 +78,7 @@ C. Informing the team about what the project manager has done
 D. Informing the team about the project management plan
 
 ===== Q11.webp =====
-Question: 11 OO OO ae nal eealll True or False: Project scope statement is better to define inclusions (in-scope items) than identify only exclusions (out of scope items)
+Question: 11  True or False: Project scope statement is better to define inclusions (in-scope items) than identify only exclusions (out of scope items)
 (Choose 1 answer)
 A. False
 B. True
@@ -98,7 +98,7 @@ A. False
 B. True
 
 ===== Q14.webp =====
-Question: 14 Oo rl ne a MR oentll To manage a project effectively, work should be broken down into small pieces. Which of the following does not describe how far to decompose the work?
+Question: 14  To manage a project effectively, work should be broken down into small pieces. Which of the following does not describe how far to decompose the work?
 (Choose 1 answer)
 A. Until it has a meaningful conclusion
 B. Until it cannot be logically subdivided further
@@ -114,13 +114,13 @@ C. Requirements specifications
 D. Resource calendars and scope statement
 
 ===== Q16.webp =====
-Question: 16 ne i _ a _ aoadll True or False: Project Manager should consider using milestones for high level reporting
+Question: 16 True or False: Project Manager should consider using milestones for high level reporting
 (Choose 1 answer)
 A. True
 B. False
 
 ===== Q17.webp =====
-Question: 17 OO OO ne — Your team member informs you that the test system must be refreshed with your test data before testing can begin. This dependency is
+Question: 17 Your team member informs you that the test system must be refreshed with your test data before testing can begin. This dependency is
 (Choose 1 answer)
 A. Discretionary
 B. Internal
@@ -128,13 +128,13 @@ C. Mandatory
 D. External
 
 ===== Q18.webp =====
-Question: 18 OO OO ae nal eealll True or False: If "develop online modules" needs to finish before "review online modules" can finish, that is called a finish to finish relationship
+Question: 18 True or False: If "develop online modules" needs to finish before "review online modules" can finish, that is called a finish to finish relationship
 (Choose 1 answer)
 A. True
 B. False
 
 ===== Q19.webp =====
-Question: 19 es A “ True or False: The Start time of the project (the early start of the first activity) can be “zero” or “one” depending on your chosen convention
+Question: 19 “ True or False: The Start time of the project (the early start of the first activity) can be “zero” or “one” depending on your chosen convention
 (Choose 1 answer)
 A. False
 B. True
@@ -144,7 +144,7 @@ Question: 20 The following table ts an activity list that includes the Activity 
 (Choose 1 answer)
 
 ===== Q21.webp =====
-Question: 21 ne i _ a _ aoadll True or False: The Forward Pass is used through the activities to determine the total duration of the project
+Question: 21  True or False: The Forward Pass is used through the activities to determine the total duration of the project
 (Choose 1 answer)
 A. True
 B. False
@@ -172,19 +172,19 @@ C. Analogous estimating
 D. Bottoms up estimating
 
 ===== Q25.webp =====
-Question: 25 _ il _ -_ _ aoadll True or False: Using top-down estimating techniques when activity durations or resource quantities are uncertain
+Question: 25  True or False: Using top-down estimating techniques when activity durations or resource quantities are uncertain
 (Choose 1 answer)
 A. True
 B. False
 
 ===== Q26.webp =====
-Question: 26 i Ae True or False: The Cost Baseline is equal to the total of Activity Cost Estimates
+Question: 26 True or False: The Cost Baseline is equal to the total of Activity Cost Estimates
 (Choose 1 answer)
 A. True
 B. False
 
 ===== Q27.webp =====
-Question: 27 re ne 7 “ True or False: Earned value integrates quality, scope and schedule and uses monetary values to assess project status
+Question: 27  True or False: Earned value integrates quality, scope and schedule and uses monetary values to assess project status
 (Choose 1 answer)
 A. False
 B. True
@@ -222,7 +222,7 @@ A. False
 B. True
 
 ===== Q33.webp =====
-Question: 33 OO OO ne eealll True or False: Project Human Resource Management includes the processes that define the tasks and assign them to suitable resources, and motivate project team to complete the tasks
+Question: 33 True or False: Project Human Resource Management includes the processes that define the tasks and assign them to suitable resources, and motivate project team to complete the tasks
 (Choose 1 answer)
 A. False
 B. True
@@ -260,7 +260,7 @@ C. Being kept updated about project progress.
 D. Completing the work
 
 ===== Q38.webp =====
-Question: 38 ne te ne el 7 — True or False: Effective project communication management creates a bridge between stakeholders based on a shared understanding of the project and the ongoing sharing of information needed for its success
+Question: 38 True or False: Effective project communication management creates a bridge between stakeholders based on a shared understanding of the project and the ongoing sharing of information needed for its success
 (Choose 1 answer)
 A. True
 B. False
@@ -306,7 +306,7 @@ E. (1)&(c). (2)&(a), (3)&(b)
 F. (1)&(c). (2)&(b), (3)&(a)
 
 ===== Q43.webp =====
-Question: 43 OO OO ne eealll True or False: The primary goal of project risk management is to maximize the likelihood and impact of negative events or threats and to minimize the likelihood and impact of positive events or opportunities
+Question: 43  True or False: The primary goal of project risk management is to maximize the likelihood and impact of negative events or threats and to minimize the likelihood and impact of positive events or opportunities
 (Choose 1 answer)
 A. False
 B. True
@@ -328,7 +328,7 @@ C. You change your plan so that another party will be responsible for the risk.
 D. You create your plan to reduce the probability and/or the impact of the risk.
 
 ===== Q46.webp =====
-Question: 46 i Ae SO True or False: When you choose to transfer your project risk to a third party. it will definitely rise to secondary risk
+Question: 46  True or False: When you choose to transfer your project risk to a third party. it will definitely rise to secondary risk
 (Choose 1 answer)
 A. True
 B. False

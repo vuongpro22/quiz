@@ -34,7 +34,7 @@ Question: 5 Effective project integration usually requires an emphasis on
 A. The careers of the team members
 B. Timely updates to the project management plan
 C. Effective communication at key interface points
-D. Product control | (= ‘
+D. Product control 
 
 ===== Q6.webp =====
 Question: 6 i As discussed in the Project Management course, The PMBOK® Guide describes 10 Project Management Knowledge Areas. Identify 3 out of the 10
