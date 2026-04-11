@@ -40,35 +40,62 @@ def split_question_blocks(content: str) -> list[tuple[int, str]]:
 
 
 def parse_question(block: str, fallback_q_num: int) -> tuple[int, str, list[tuple[str, str]], int]:
-    q_match = re.search(r"Question:\s*(\d+)\s*(.*)", block)
-    if q_match:
-        q_num = int(q_match.group(1))
-        question_line = q_match.group(2).strip()
-    else:
-        q_num = fallback_q_num
-        question_line = ""
+    # NOTE: `Question:\s*(\d+)\s*(.*)` cannot span lines — `.` does not match newlines.
+    lines = [ln.rstrip() for ln in block.splitlines()]
+    q_num = fallback_q_num
+    i = 0
+    question_lines: list[str] = []
+    header_re = re.compile(r"^\s*Question:\s*(\d+)\s*(.*)$", re.IGNORECASE)
 
-    choose_match = re.search(r"\(Choose\s+(\d+)\s+answers?\)", block, flags=re.IGNORECASE)
-    choose_count = int(choose_match.group(1)) if choose_match else 1
+    while i < len(lines) and not lines[i].strip():
+        i += 1
+    if i < len(lines):
+        m = header_re.match(lines[i])
+        if m:
+            q_num = int(m.group(1))
+            first = m.group(2).strip()
+            if first:
+                question_lines.append(first)
+            i += 1
 
+    choose_line_re = re.compile(r"^\s*\(Choose\s+(\d+)\s+answers?\)\s*$", re.IGNORECASE)
+    choose_count = 1
+    option_start = len(lines)
+
+    while i < len(lines):
+        line = lines[i]
+        stripped = line.strip()
+        cm = choose_line_re.match(stripped)
+        if cm:
+            choose_count = int(cm.group(1))
+            option_start = i + 1
+            break
+        if re.match(r"^[A-F]\.\s", stripped):
+            option_start = i
+            break
+        question_lines.append(line)
+        i += 1
+
+    question_text = "\n".join(question_lines).strip()
+    if not question_text:
+        for ln in lines:
+            s = ln.strip()
+            if not s or s.startswith("(") or re.match(r"^[A-F]\.", s):
+                continue
+            question_text = s
+            break
+        if not question_text:
+            question_text = f"Question {q_num}"
+
+    options_block = "\n".join(lines[option_start:])
     option_pattern = re.compile(r"([A-F])\.\s*(.+?)(?=\n[A-F]\.\s|\Z)", re.DOTALL)
-    options_raw = option_pattern.findall(block)
+    options_raw = option_pattern.findall(options_block)
     options: list[tuple[str, str]] = []
     for key, text in options_raw:
         clean_text = " ".join(text.replace("\n", " ").split())
         options.append((key.upper(), clean_text))
 
-    if not question_line:
-        lines = [ln.strip() for ln in block.splitlines() if ln.strip()]
-        for ln in lines:
-            if ln.startswith("(") or re.match(r"^[A-F]\.", ln):
-                continue
-            question_line = ln
-            break
-        if not question_line:
-            question_line = f"Question {q_num}"
-
-    return q_num, question_line, options, choose_count
+    return q_num, question_text, options, choose_count
 
 
 def parse_questions(question_path: Path) -> dict[int, dict]:

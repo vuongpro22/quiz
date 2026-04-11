@@ -369,5 +369,6 @@ F. CV = $300
 Question: 50 In Earned Value Management Technique, you can compute the Cost Performance Index (CPI) by applying which of following formula?
 (Choose 1 answer)
 A. CPI=PV/AC
-B. CPI=CV/AC Cc. CPI=SV/AC
+B. CPI=CV/AC 
+C. CPI=SV/AC
 D. CPI=EV/AC
