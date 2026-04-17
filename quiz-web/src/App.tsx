@@ -92,9 +92,11 @@ export default function App() {
 
   const [questions, setQuestions] = useState<QuestionsMap>({});
   const [answerKey, setAnswerKey] = useState<Map<number, Set<string>>>(new Map());
+  const [allQNumbers, setAllQNumbers] = useState<number[]>([]);
   const [qNumbers, setQNumbers] = useState<number[]>([]);
   const [currentIdx, setCurrentIdx] = useState(0);
   const [userAnswers, setUserAnswers] = useState<Record<number, string[]>>({});
+  const [trueFalseOnlyActive, setTrueFalseOnlyActive] = useState(false);
 
   const [flashIdx, setFlashIdx] = useState(0);
   const [answerVisible, setAnswerVisible] = useState(false);
@@ -104,6 +106,7 @@ export default function App() {
   const [studyQueue, setStudyQueue] = useState<number[]>([]);
   const [studyWrongInLastRound, setStudyWrongInLastRound] = useState(0);
   const [studyLocked, setStudyLocked] = useState<Record<number, boolean>>({});
+  const autoAdvancedStudyRoundRef = useRef<number>(0);
 
   const applyBundle = useCallback(
     (qText: string, aText: string, answersVirtualFileName: string): number[] | null => {
@@ -116,7 +119,9 @@ export default function App() {
       }
       setQuestions(qs);
       setAnswerKey(ans);
+      setAllQNumbers(nums);
       setQNumbers(nums);
+      setTrueFalseOnlyActive(false);
       setCurrentIdx(0);
       setUserAnswers({});
       setFlashIdx(0);
@@ -211,7 +216,7 @@ export default function App() {
   const qNum = activeNumbers[currentIdx];
   const currentQ = qNum !== undefined ? questions[qNum] : undefined;
   const currentCorrectSet = qNum !== undefined ? answerKey.get(qNum) ?? new Set<string>() : new Set<string>();
-  const trueFalseNumbers = qNumbers.filter((n) => {
+  const trueFalseNumbers = allQNumbers.filter((n) => {
     const data = questions[n];
     return !!data && isTrueFalseQuestion(data.options);
   });
@@ -312,6 +317,15 @@ export default function App() {
     });
   };
 
+  useEffect(() => {
+    if (view !== "study" || !studyRoundNums.length) return;
+    const allAnsweredThisRound = studyRoundNums.every((n) => !!studyLocked[n]);
+    if (!allAnsweredThisRound) return;
+    if (autoAdvancedStudyRoundRef.current === studyRound) return;
+    autoAdvancedStudyRoundRef.current = studyRound;
+    submitStudyRound();
+  }, [view, studyRoundNums, studyLocked, studyRound]);
+
   const restartCurrentPractice = () => {
     if (view === "study") {
       startStudySession(qNumbers);
@@ -327,6 +341,9 @@ export default function App() {
 
   const shuffleCurrentPractice = () => {
     const shuffled = shuffleArray(qNumbers);
+    if (!trueFalseOnlyActive) {
+      setAllQNumbers(shuffled);
+    }
     setQNumbers(shuffled);
     setResultText(null);
 
@@ -342,12 +359,14 @@ export default function App() {
 
   const useOnlyTrueFalse = () => {
     if (trueFalseNumbers.length <= 5) return;
-    setQNumbers(trueFalseNumbers);
+    const next = trueFalseOnlyActive ? allQNumbers : trueFalseNumbers;
+    setTrueFalseOnlyActive(!trueFalseOnlyActive);
+    setQNumbers(next);
     setCurrentIdx(0);
     setUserAnswers({});
     setResultText(null);
     if (view === "study") {
-      startStudySession(trueFalseNumbers);
+      startStudySession(next);
     }
   };
 
@@ -642,17 +661,21 @@ export default function App() {
                 Trộn câu hỏi
               </button>
               {trueFalseNumbers.length > 5 && (
-                <button type="button" className="btn-ghost" onClick={useOnlyTrueFalse}>
-                  Chỉ True/False ({trueFalseNumbers.length})
+                <button
+                  type="button"
+                  className={`btn-ghost${trueFalseOnlyActive ? " btn-ghost-active" : ""}`}
+                  onClick={useOnlyTrueFalse}
+                >
+                  {trueFalseOnlyActive
+                    ? `Đang chỉ True/False (${trueFalseNumbers.length})`
+                    : `Chỉ True/False (${trueFalseNumbers.length})`}
                 </button>
               )}
-              <button
-                type="button"
-                className="btn-submit-grade"
-                onClick={view === "study" ? submitStudyRound : submitQuiz}
-              >
-                {view === "study" ? "Kết thúc lượt 5 câu" : "Nộp bài & chấm điểm"}
-              </button>
+              {view !== "study" && (
+                <button type="button" className="btn-submit-grade" onClick={submitQuiz}>
+                  Nộp bài & chấm điểm
+                </button>
+              )}
               <button
                 type="button"
                 className="btn-nav-next"
