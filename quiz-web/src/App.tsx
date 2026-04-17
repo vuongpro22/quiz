@@ -106,7 +106,6 @@ export default function App() {
   const [studyQueue, setStudyQueue] = useState<number[]>([]);
   const [studyWrongInLastRound, setStudyWrongInLastRound] = useState(0);
   const [studyLocked, setStudyLocked] = useState<Record<number, boolean>>({});
-  const autoAdvancedStudyRoundRef = useRef<number>(0);
 
   const applyBundle = useCallback(
     (qText: string, aText: string, answersVirtualFileName: string): number[] | null => {
@@ -251,6 +250,10 @@ export default function App() {
   };
 
   const goNext = () => {
+    if (view === "study" && currentIdx >= activeNumbers.length - 1) {
+      submitStudyRound();
+      return;
+    }
     if (currentIdx < activeNumbers.length - 1) setCurrentIdx((i) => i + 1);
   };
 
@@ -317,15 +320,6 @@ export default function App() {
     });
   };
 
-  useEffect(() => {
-    if (view !== "study" || !studyRoundNums.length) return;
-    const allAnsweredThisRound = studyRoundNums.every((n) => !!studyLocked[n]);
-    if (!allAnsweredThisRound) return;
-    if (autoAdvancedStudyRoundRef.current === studyRound) return;
-    autoAdvancedStudyRoundRef.current = studyRound;
-    submitStudyRound();
-  }, [view, studyRoundNums, studyLocked, studyRound]);
-
   const restartCurrentPractice = () => {
     if (view === "study") {
       startStudySession(qNumbers);
@@ -388,7 +382,11 @@ export default function App() {
         }
         if (e.key === "ArrowRight") {
           e.preventDefault();
-          setCurrentIdx((i) => (i < maxIdx ? i + 1 : i));
+          if (view === "study" && currentIdx >= maxIdx) {
+            submitStudyRound();
+          } else {
+            setCurrentIdx((i) => (i < maxIdx ? i + 1 : i));
+          }
         }
         if (view === "study" && e.key === "Enter") {
           e.preventDefault();
@@ -671,16 +669,18 @@ export default function App() {
                     : `Chỉ True/False (${trueFalseNumbers.length})`}
                 </button>
               )}
-              {view !== "study" && (
-                <button type="button" className="btn-submit-grade" onClick={submitQuiz}>
-                  Nộp bài & chấm điểm
-                </button>
-              )}
+              <button
+                type="button"
+                className="btn-submit-grade"
+                onClick={view === "study" ? submitStudyRound : submitQuiz}
+              >
+                {view === "study" ? "Chấm lượt hiện tại" : "Nộp bài & chấm điểm"}
+              </button>
               <button
                 type="button"
                 className="btn-nav-next"
                 onClick={goNext}
-                disabled={currentIdx >= activeNumbers.length - 1}
+                disabled={view !== "study" && currentIdx >= activeNumbers.length - 1}
               >
                 Tiếp →
               </button>
