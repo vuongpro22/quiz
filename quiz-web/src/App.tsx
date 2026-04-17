@@ -9,13 +9,15 @@ import {
   setsEqual,
 } from "./parseQuiz";
 
-type View = "setup" | "quiz" | "flashcard";
+type View = "setup" | "quiz" | "flashcard" | "study";
 
 type HomeTab = "single" | "random";
 
 type ExamListItem = { _id: string; examKey: string; updatedAt?: string; questionCount?: number };
 
-type LearnMode = "quiz" | "flashcard";
+type LearnMode = "quiz" | "flashcard" | "study";
+
+const STUDY_BATCH_SIZE = 5;
 
 const API_BASE = (import.meta.env.VITE_API_URL as string | undefined)?.replace(/\/$/, "") ?? "";
 
@@ -58,6 +60,25 @@ function userPickToSet(pick: string[] | undefined): Set<string> {
   return new Set((pick ?? []).map((x) => x.toUpperCase()));
 }
 
+function normalizeTfText(raw: string): string {
+  return raw.toLowerCase().replace(/[^a-z]/g, "");
+}
+
+function isTrueFalseQuestion(options: [string, string][]): boolean {
+  if (options.length !== 2) return false;
+  const texts = new Set(options.map(([, text]) => normalizeTfText(text)));
+  return texts.has("true") && texts.has("false");
+}
+
+function shuffleArray<T>(arr: T[]): T[] {
+  const out = [...arr];
+  for (let i = out.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [out[i], out[j]] = [out[j]!, out[i]!];
+  }
+  return out;
+}
+
 export default function App() {
   const [homeTab, setHomeTab] = useState<HomeTab>("single");
   const [error, setError] = useState<string | null>(null);
@@ -78,15 +99,20 @@ export default function App() {
   const [flashIdx, setFlashIdx] = useState(0);
   const [answerVisible, setAnswerVisible] = useState(false);
   const [resultText, setResultText] = useState<string | null>(null);
+  const [studyRound, setStudyRound] = useState(1);
+  const [studyRoundNums, setStudyRoundNums] = useState<number[]>([]);
+  const [studyQueue, setStudyQueue] = useState<number[]>([]);
+  const [studyWrongInLastRound, setStudyWrongInLastRound] = useState(0);
+  const [studyLocked, setStudyLocked] = useState<Record<number, boolean>>({});
 
   const applyBundle = useCallback(
-    (qText: string, aText: string, answersVirtualFileName: string): boolean => {
+    (qText: string, aText: string, answersVirtualFileName: string): number[] | null => {
       const qs = parseQuestions(qText);
       const ans = parseAnswers(aText, answersVirtualFileName);
       const nums = intersectQuestionNumbers(qs, ans);
       if (!nums.length) {
         setError("Không có câu nào khớp giữa đề và đáp án (kiểm tra số thứ tự câu).");
-        return false;
+        return null;
       }
       setQuestions(qs);
       setAnswerKey(ans);
@@ -95,11 +121,29 @@ export default function App() {
       setUserAnswers({});
       setFlashIdx(0);
       setAnswerVisible(false);
+      setStudyRound(1);
+      setStudyRoundNums([]);
+      setStudyQueue([]);
+      setStudyWrongInLastRound(0);
+      setStudyLocked({});
       setError(null);
-      return true;
+      return nums;
     },
     []
   );
+
+  const startStudySession = useCallback((nums: number[]) => {
+    const initialRound = nums.slice(0, STUDY_BATCH_SIZE);
+    const rest = nums.slice(initialRound.length);
+    setStudyRound(1);
+    setStudyRoundNums(initialRound);
+    setStudyQueue(rest);
+    setStudyWrongInLastRound(0);
+    setCurrentIdx(0);
+    setUserAnswers({});
+    setStudyLocked({});
+    setView("study");
+  }, []);
 
   useEffect(() => {
     if (view !== "setup") return;
@@ -143,14 +187,16 @@ export default function App() {
           answersExtension?: string;
         };
         const ext = doc.answersExtension === "txt" ? ".txt" : ".csv";
-        const ok = applyBundle(doc.questionsText, doc.answersText, `mongo${ext}`);
-        if (!ok) return;
+        const nums = applyBundle(doc.questionsText, doc.answersText, `mongo${ext}`);
+        if (!nums) return;
         if (mode === "quiz") {
           setView("quiz");
-        } else {
+        } else if (mode === "flashcard") {
           setFlashIdx(0);
           setAnswerVisible(false);
           setView("flashcard");
+        } else {
+          startStudySession(nums);
         }
       } catch {
         setError("Lỗi kết nối API (server có chạy không?).");
@@ -158,24 +204,39 @@ export default function App() {
         setServerLoading(false);
       }
     },
-    [applyBundle]
+    [applyBundle, startStudySession]
   );
 
-  const qNum = qNumbers[currentIdx];
+  const activeNumbers = view === "study" ? studyRoundNums : qNumbers;
+  const qNum = activeNumbers[currentIdx];
   const currentQ = qNum !== undefined ? questions[qNum] : undefined;
+  const currentCorrectSet = qNum !== undefined ? answerKey.get(qNum) ?? new Set<string>() : new Set<string>();
+  const trueFalseNumbers = qNumbers.filter((n) => {
+    const data = questions[n];
+    return !!data && isTrueFalseQuestion(data.options);
+  });
 
   const saveSingle = (letter: string) => {
     if (qNum === undefined) return;
+    if (view === "study" && studyLocked[qNum]) return;
     setUserAnswers((prev) => ({ ...prev, [qNum]: letter ? [letter.toUpperCase()] : [] }));
+    if (view === "study") {
+      setStudyLocked((prev) => ({ ...prev, [qNum]: true }));
+    }
   };
 
   const toggleMulti = (letter: string) => {
     if (qNum === undefined) return;
+    if (view === "study" && studyLocked[qNum]) return;
     const upper = letter.toUpperCase();
+    const chooseCount = currentQ?.chooseCount ?? 1;
     setUserAnswers((prev) => {
       const cur = new Set(prev[qNum] ?? []);
       if (cur.has(upper)) cur.delete(upper);
       else cur.add(upper);
+      if (view === "study" && cur.size >= chooseCount) {
+        setStudyLocked((locked) => ({ ...locked, [qNum]: true }));
+      }
       return { ...prev, [qNum]: [...cur].sort() };
     });
   };
@@ -185,7 +246,7 @@ export default function App() {
   };
 
   const goNext = () => {
-    if (currentIdx < qNumbers.length - 1) setCurrentIdx((i) => i + 1);
+    if (currentIdx < activeNumbers.length - 1) setCurrentIdx((i) => i + 1);
   };
 
   const submitQuiz = () => {
@@ -211,9 +272,89 @@ export default function App() {
     setResultText(msg);
   };
 
+  const submitStudyRound = () => {
+    if (!studyRoundNums.length) return;
+
+    const wrongNums: number[] = [];
+    for (const num of studyRoundNums) {
+      const user = userPickToSet(userAnswers[num]);
+      const key = answerKey.get(num) ?? new Set<string>();
+      if (!setsEqual(user, key)) wrongNums.push(num);
+    }
+    setStudyWrongInLastRound(wrongNums.length);
+
+    // Wrong questions come first in the very next round.
+    const nextQueue = [...wrongNums, ...studyQueue];
+    const finishedAll = nextQueue.length === 0;
+    if (finishedAll) {
+      const remainUnique = new Set(nextQueue).size;
+      const masteredUnique = Math.max(0, qNumbers.length - remainUnique);
+      const msg =
+        `Hoàn thành toàn bộ đề.\n` +
+        `- Lượt cuối sai: ${wrongNums.length} câu\n` +
+        `- Nắm chắc: ${masteredUnique}/${qNumbers.length} câu\n` +
+        `- Còn cần ôn: ${remainUnique} câu`;
+      setResultText(msg);
+      return;
+    }
+
+    const nextRoundNums = nextQueue.slice(0, STUDY_BATCH_SIZE);
+    const rest = nextQueue.slice(nextRoundNums.length);
+    setStudyRound((r) => r + 1);
+    setStudyRoundNums(nextRoundNums);
+    setStudyQueue(rest);
+    setCurrentIdx(0);
+    setStudyLocked({});
+    setUserAnswers((prev) => {
+      const copied = { ...prev };
+      for (const n of nextRoundNums) delete copied[n];
+      return copied;
+    });
+  };
+
+  const restartCurrentPractice = () => {
+    if (view === "study") {
+      startStudySession(qNumbers);
+      setResultText(null);
+      return;
+    }
+    if (view === "quiz") {
+      setCurrentIdx(0);
+      setUserAnswers({});
+      setResultText(null);
+    }
+  };
+
+  const shuffleCurrentPractice = () => {
+    const shuffled = shuffleArray(qNumbers);
+    setQNumbers(shuffled);
+    setResultText(null);
+
+    if (view === "study") {
+      startStudySession(shuffled);
+      return;
+    }
+    if (view === "quiz") {
+      setCurrentIdx(0);
+      setUserAnswers({});
+    }
+  };
+
+  const useOnlyTrueFalse = () => {
+    if (trueFalseNumbers.length <= 5) return;
+    setQNumbers(trueFalseNumbers);
+    setCurrentIdx(0);
+    setUserAnswers({});
+    setResultText(null);
+    if (view === "study") {
+      startStudySession(trueFalseNumbers);
+    }
+  };
+
   useEffect(() => {
-    if (view !== "quiz" && view !== "flashcard") return;
-    const maxIdx = Math.max(0, qNumbers.length - 1);
+    if (view !== "quiz" && view !== "flashcard" && view !== "study") return;
+    const navCount = view === "study" ? studyRoundNums.length : qNumbers.length;
+    const maxIdx = Math.max(0, navCount - 1);
     const onKey = (e: KeyboardEvent) => {
       if (
         e.target instanceof HTMLInputElement ||
@@ -221,7 +362,7 @@ export default function App() {
         e.target instanceof HTMLSelectElement
       )
         return;
-      if (view === "quiz") {
+      if (view === "quiz" || view === "study") {
         if (e.key === "ArrowLeft") {
           e.preventDefault();
           setCurrentIdx((i) => (i > 0 ? i - 1 : i));
@@ -229,6 +370,10 @@ export default function App() {
         if (e.key === "ArrowRight") {
           e.preventDefault();
           setCurrentIdx((i) => (i < maxIdx ? i + 1 : i));
+        }
+        if (view === "study" && e.key === "Enter") {
+          e.preventDefault();
+          submitStudyRound();
         }
       }
       if (view === "flashcard") {
@@ -250,10 +395,13 @@ export default function App() {
     };
     window.addEventListener("keydown", onKey);
     return () => window.removeEventListener("keydown", onKey);
-  }, [view, qNumbers.length]);
+  }, [view, qNumbers.length, studyRoundNums.length]);
 
   const flashQNum = qNumbers[flashIdx];
   const flashData = flashQNum !== undefined ? questions[flashQNum] : undefined;
+  const currentUserSet = qNum !== undefined ? userPickToSet(userAnswers[qNum]) : new Set<string>();
+  const showStudyFeedback = view === "study" && qNum !== undefined && studyLocked[qNum];
+  const studyAnsweredCorrectly = setsEqual(currentUserSet, currentCorrectSet);
 
   return (
     <>
@@ -286,6 +434,15 @@ export default function App() {
                 onClick={() => setLearnMode("flashcard")}
               >
                 Flashcard Mode
+              </button>
+              <button
+                type="button"
+                role="tab"
+                aria-selected={learnMode === "study"}
+                className={`mode-toggle__btn${learnMode === "study" ? " mode-toggle__btn--active" : ""}`}
+                onClick={() => setLearnMode("study")}
+              >
+                Chế độ Học
               </button>
             </div>
           </div>
@@ -326,7 +483,11 @@ export default function App() {
                       disabled={serverLoading}
                       onClick={() => void startExamFromCard(e._id, learnMode)}
                     >
-                      {learnMode === "quiz" ? "Bắt đầu Quiz" : "Bắt đầu Flashcard"}
+                      {learnMode === "quiz"
+                        ? "Bắt đầu Quiz"
+                        : learnMode === "flashcard"
+                          ? "Bắt đầu Flashcard"
+                          : "Bắt đầu Học"}
                       <StartArrowIcon />
                     </button>
                   </article>
@@ -356,7 +517,7 @@ export default function App() {
         </>
       )}
 
-      {view === "quiz" && currentQ && qNum !== undefined && (
+      {(view === "quiz" || view === "study") && currentQ && qNum !== undefined && (
         <div className="quiz-panel">
           <div className="back-link quiz-back">
             <button type="button" onClick={() => setView("setup")}>
@@ -365,12 +526,21 @@ export default function App() {
           </div>
           <div className="quiz-header-row">
             <span className="quiz-badge">
-              Câu {currentIdx + 1} / {qNumbers.length} · Q{qNum}
+              {view === "study"
+                ? `Học lượt ${studyRound} · Câu ${currentIdx + 1}/${studyRoundNums.length} · Q${qNum}`
+                : `Câu ${currentIdx + 1} / ${qNumbers.length} · Q${qNum}`}
             </span>
             <span className="quiz-percent">
-              {Math.round(((currentIdx + 1) / qNumbers.length) * 100)}% hoàn thành
+              {view === "study"
+                ? `${Math.round(((currentIdx + 1) / Math.max(1, studyRoundNums.length)) * 100)}% lượt này`
+                : `${Math.round(((currentIdx + 1) / qNumbers.length) * 100)}% hoàn thành`}
             </span>
           </div>
+          {view === "study" && (
+            <div className="study-note">
+              Sai lượt trước: {studyWrongInLastRound} câu · Còn chờ ôn: {studyQueue.length} câu
+            </div>
+          )}
           <p className="question-title">{currentQ.question}</p>
           <p className="choose-hint">
             {currentQ.chooseCount === 1 ? "Chọn 1 đáp án" : `Chọn ${currentQ.chooseCount} đáp án`}
@@ -378,50 +548,116 @@ export default function App() {
           <div className="options-list">
             {currentQ.chooseCount === 1
               ? currentQ.options.map(([key, text]) => (
-                  <label key={key} className="option-card" htmlFor={`opt-${qNum}-${key}`}>
+                  <label
+                    key={key}
+                    className={`option-card${
+                      view === "study" && (userAnswers[qNum] ?? []).includes(key)
+                        ? currentCorrectSet.has(key)
+                          ? " option-card--correct"
+                          : " option-card--wrong"
+                        : ""
+                    }`}
+                    htmlFor={`opt-${qNum}-${key}`}
+                  >
                     <input
                       type="radio"
                       className="option-input"
                       name={`q-${qNum}`}
                       id={`opt-${qNum}-${key}`}
                       checked={(userAnswers[qNum]?.[0] ?? "") === key}
+                      disabled={view === "study" && !!studyLocked[qNum]}
                       onChange={() => saveSingle(key)}
                     />
                     <span className="option-radio-faux" aria-hidden />
                     <span className="option-label-text">
                       {key}. {text}
                     </span>
+                    {view === "study" &&
+                      (userAnswers[qNum] ?? []).includes(key) &&
+                      (currentCorrectSet.has(key) ? (
+                        <span className="option-chip option-chip--ok">Đúng</span>
+                      ) : (
+                        <span className="option-chip option-chip--bad">Sai</span>
+                      ))}
                   </label>
                 ))
               : currentQ.options.map(([key, text]) => (
-                  <label key={key} className="option-card" htmlFor={`cb-${qNum}-${key}`}>
+                  <label
+                    key={key}
+                    className={`option-card${
+                      view === "study" && (userAnswers[qNum] ?? []).includes(key)
+                        ? currentCorrectSet.has(key)
+                          ? " option-card--correct"
+                          : " option-card--wrong"
+                        : ""
+                    }`}
+                    htmlFor={`cb-${qNum}-${key}`}
+                  >
                     <input
                       type="checkbox"
                       className="option-input"
                       id={`cb-${qNum}-${key}`}
                       checked={(userAnswers[qNum] ?? []).includes(key)}
+                      disabled={view === "study" && !!studyLocked[qNum]}
                       onChange={() => toggleMulti(key)}
                     />
                     <span className="option-check-faux" aria-hidden />
                     <span className="option-label-text">
                       {key}. {text}
                     </span>
+                    {view === "study" &&
+                      (userAnswers[qNum] ?? []).includes(key) &&
+                      (currentCorrectSet.has(key) ? (
+                        <span className="option-chip option-chip--ok">Đúng</span>
+                      ) : (
+                        <span className="option-chip option-chip--bad">Sai</span>
+                      ))}
                   </label>
                 ))}
           </div>
+          {showStudyFeedback && (
+            <div className={studyAnsweredCorrectly ? "study-feedback study-feedback--ok" : "study-feedback study-feedback--bad"}>
+              {studyAnsweredCorrectly ? (
+                <span>Đúng rồi. Chuyển câu tiếp theo nhé.</span>
+              ) : (
+                <span>
+                  Sai. Đáp án đúng:{" "}
+                  {[...currentCorrectSet]
+                    .sort()
+                    .map((k) => `${k}. ${currentQ.options.find(([opt]) => opt === k)?.[1] ?? ""}`.trim())
+                    .join(" | ")}
+                </span>
+              )}
+            </div>
+          )}
           <div className="quiz-nav-footer">
             <button type="button" className="btn-nav-prev" onClick={goPrev} disabled={currentIdx === 0}>
               ← Trước
             </button>
             <div className="quiz-nav-footer__right">
-              <button type="button" className="btn-submit-grade" onClick={submitQuiz}>
-                Nộp bài &amp; chấm điểm
+              <button type="button" className="btn-ghost" onClick={restartCurrentPractice}>
+                Làm lại
+              </button>
+              <button type="button" className="btn-ghost" onClick={shuffleCurrentPractice}>
+                Trộn câu hỏi
+              </button>
+              {trueFalseNumbers.length > 5 && (
+                <button type="button" className="btn-ghost" onClick={useOnlyTrueFalse}>
+                  Chỉ True/False ({trueFalseNumbers.length})
+                </button>
+              )}
+              <button
+                type="button"
+                className="btn-submit-grade"
+                onClick={view === "study" ? submitStudyRound : submitQuiz}
+              >
+                {view === "study" ? "Kết thúc lượt 5 câu" : "Nộp bài & chấm điểm"}
               </button>
               <button
                 type="button"
                 className="btn-nav-next"
                 onClick={goNext}
-                disabled={currentIdx >= qNumbers.length - 1}
+                disabled={currentIdx >= activeNumbers.length - 1}
               >
                 Tiếp →
               </button>
@@ -432,7 +668,9 @@ export default function App() {
               💡
             </span>
             <span>
-              Mẹo: Dùng phím ← → để chuyển câu; bạn có thể đổi đáp án bất cứ lúc nào trước khi nộp bài.
+              {view === "study"
+                ? "Mẹo: Mỗi lượt 5 câu. Nộp lượt sẽ tự gom câu sai sang lượt kế tiếp cho đến khi hết đề."
+                : "Mẹo: Dùng phím ← → để chuyển câu; bạn có thể đổi đáp án bất cứ lúc nào trước khi nộp bài."}
             </span>
           </div>
         </div>
@@ -517,9 +755,16 @@ export default function App() {
           <div className="modal">
             <h2 id="result-title">Kết quả</h2>
             <pre>{resultText}</pre>
-            <button type="button" className="btn-primary" style={{ marginTop: 16 }} onClick={() => setResultText(null)}>
-              Đóng
-            </button>
+            <div className="quiz-nav-footer__right" style={{ marginTop: 16 }}>
+              {(view === "quiz" || view === "study") && (
+                <button type="button" className="btn-submit-grade" onClick={restartCurrentPractice}>
+                  Làm lại
+                </button>
+              )}
+              <button type="button" className="btn-primary" onClick={() => setResultText(null)}>
+                Đóng
+              </button>
+            </div>
           </div>
         </div>
       )}
