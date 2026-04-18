@@ -109,98 +109,81 @@ Hint: Product quality
 ===== NHÓM 12 (2 câu gần giống) =====
 [PMG201c - FA 2024 - FE] Q30
 True or False: The Process Improvement Plan is a component of the project management plan that details how project management and development processes are to be analyzed in order to identify how to reduce their value
-Hint: Câu mẫu trong nhóm — so sánh với các biến thể kế bên để thấy chỗ đổi chữ / số.
+Hint: how to reduce their value
 
 [PMG201c - FA25 - RE] Q24
 True or False: The Process Improvement Plan is a component of the project management plan that details how project management and development processes are to be analyzed in order to identify how to increase their value
-Hint: 'reduce' → 'increase'
+Hint: how to increase their value
 
 ===== NHÓM 13 (2 câu gần giống) =====
 [PMG201c - FA 2024 - FE] Q31
 True or False: Your role as the project manager during quality assurance is to work with a quality assurance manager who will create a test plan and test cases which will be used to test the product you are creating in order to prevent defects from reaching your customer
-Hint: Câu mẫu trong nhóm — so sánh với các biến thể kế bên để thấy chỗ đổi chữ / số.
+Hint: during quality assurance
 
 [PMG201c - SP 2025 - C2FE] Q32
 True or False: Your role as the project manager during quality control is to work with a representative of quality control department who will create a test plan and test cases which will be used to test the product you are creating in order to prevent defects from reaching your customer
-Hint: 'assurance' → 'control'; thêm 'representative'; 'assurance' → 'of'; 'manager' → 'control'; thêm 'department'
+Hint: during quality control
 
 ===== NHÓM 14 (2 câu gần giống) =====
 [PMG201c - FA 2024 - FE] Q32
 True or False: Performing quality control within the context of a project involves taking actions to eliminate causes of unsatisfactory project performance
-Hint: Câu mẫu trong nhóm — so sánh với các biến thể kế bên để thấy chỗ đổi chữ / số.
+Hint: Performing quality control
 
 [PMG201c - FA25 - RE] Q25
 True or False: Performing quality assurance within the context of a project involves taking actions to eliminate causes of unsatisfactory project performance
-Hint: 'control' → 'assurance'
+Hint: Performing quality assurance
 
 ===== NHÓM 15 (4 câu gần giống) =====
 [PMG201c - FA 2024 - FE] Q34
 Which one of these should be the view of conflict?
-Hint: Câu mẫu trong nhóm — so sánh với các biến thể kế bên để thấy chỗ đổi chữ / số.
+Hint: should be the view
 
 [PMG201c - FA 2024 - RE] Q21
 Which one of these is the correct view of conflict?
-Hint: bỏ 'should'; 'be' → 'is'; thêm 'correct'
+Hint: is the correct view
 
-[PMG201c - FA25 - FE] Q29
-Which one of these is correct view of conflict?
-Hint: bỏ 'should'; bỏ 'be'; 'the' → 'is'; thêm 'correct'
-
-[PMG201c - SU25 - FE] Q29
-Which one is correct view of conflict?
-Hint: bỏ 'of'; bỏ 'these'; bỏ 'should'; bỏ 'be'; 'the' → 'is'; thêm 'correct'
 
 ===== NHÓM 16 (3 câu gần giống) =====
 [PMG201c - FA 2024 - FE] Q36
 You and another project manager disagree over whether a team member should work on your team or on her team. You decide that the team member can work for the other project manager and suppose that the other project manager will support you in the future. The truth is you wanted this person working on your project The conflict resolution approach you have used is
-Hint: Câu mẫu trong nhóm — so sánh với các biến thể kế bên để thấy chỗ đổi chữ / số.
+Hint: project manager and suppose
 
-[PMG201c - SP 2025 - FE] Q36
-You and another project manager disagree over whether a team member should work on your team or on her team. You decide that the team member can work for the other project manager and suppose that the other ch 1 project manager will support you in the future. The truth is you wanted this person working on your project The conflict resolution approach you have used is
-Hint: thêm 'ch'; thêm '1'
 
 [PMG201c - SU25 - RE] Q19
 “ You and another project manager disagree over whether a team member should work on your team or on her team. You decide that the team member can work for the other project manager in the afternoon and the other project manager says it is OK for the team member to work for you in the morning. The truth is you both wanted this person fulltime. The conflict resolution approach you have both used is
-Hint: thêm 'in'; thêm 'the'; 'suppose' → 'afternoon'; bỏ 'that'; bỏ 'will'; 'support' → 'says'; thêm 'it'; thêm 'is'; thêm 'ok'; thêm 'for'
+Hint: project manager in the afternoon
 
 ===== NHÓM 17 (3 câu gần giống) =====
 [PMG201c - FA 2024 - FE] Q37
 When you use the RACI or Responsible, Accountable, Consult, Inform version of the RAM, those informed persons are
-Hint: Câu mẫu trong nhóm — so sánh với các biến thể kế bên để thấy chỗ đổi chữ / số.
+Hint: those informed persons
 
 [PMG201c - FA 2024 - RE] Q41
-(Choose | answer) When you use the RACI or Responsible, Accountable, Consult, Inform version of the RAM. those responsible persons are
-Hint: 'informed' → 'responsible'
+When you use the RACI or Responsible, Accountable, Consult, Inform version of the RAM. those responsible persons are
+Hint: those responsible persons
 
 [PMG201c - FA25 - FE] Q33
 When you use the RACI or Responsible, Accountable, Consult, Inform version of the RAM, those accountable persons are
-Hint: 'informed' → 'accountable'
+Hint: those accountable persons
 
 ===== NHÓM 18 (4 câu gần giống) =====
 [PMG201c - FA 2024 - FE] Q40
 Lateral communication is communication to/from
-Hint: Câu mẫu trong nhóm — so sánh với các biến thể kế bên để thấy chỗ đổi chữ / số.
+Hint: is communication
 
 [PMG201c - FA 2024 - RE] Q43
 Lateral communication is NOT communication to/from
-Hint: thêm 'not'
+Hint: is NOT communication
 
 [PMG201c - FA25 - FE] Q36
 Downward communication is communication to/from
-Hint: 'lateral' → 'downward'
+Hint: Downward communication
 
 [PMG201c - FA25 - RE] Q36
 Upward communication is communication to/from
-Hint: 'lateral' → 'upward'
+Hint: Upward communication
 
-===== NHÓM 19 (2 câu gần giống) =====
-[PMG201c - FA 2024 - FE] Q41
-True or False: The sender is responsible to provide feedback to acknowledge that the sent message has been received and understood. The receiver ts responsible to make sure the sent message is clear, complete, and appropriate
-Hint: Câu mẫu trong nhóm — so sánh với các biến thể kế bên để thấy chỗ đổi chữ / số.
 
-[PMG201c - SP 2025 - FE] Q41
-True or False: The sender is responsible to provide feedback to acknowledge that the sent message has been received and understood. The receiver is responsible to make sure the sent message Is clear, complete, and appropriate
-Hint: 'ts' → 'is'
 
 ===== NHÓM 20 (2 câu gần giống) =====
 [PMG201c - FA 2024 - FE] Q44
