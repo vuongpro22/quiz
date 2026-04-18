@@ -189,19 +189,19 @@ Hint: it may give rise to secondary risk that did not exist prior to the transfe
 ===== NHÓM 23 (6 câu gần giống) =====
 [PMG201c - FA 2024 - FE] Q48
 One way to classify your stakeholders is to use the Power/Interest Grid. If a stakeholder is low interest / high power. what should the Project Manager do?
-Hint: If a stakeholder is low interest / high power.
+Hint: low/high
 
 [PMG201c - FA25 - FE] Q44
 One way to classify your stakeholders is to use the Power/Interest Grid. If a stakeholder is high interest / low power, what should the Project Manager do?
-Hint: If a stakeholder is high interest / low power
+Hint: high/low
 
 [PMG201c - SP 2025 - C2FE] Q48
 One way to classify your stakeholders is to use the Power/Interest Grid. If a stakeholder is low interest / low power, what should the Project manager do?
-Hint: If a stakeholder is low interest / low power.
+Hint: low/low
 
 [PMG201c - SP 2025 - FE] Q48
 One way to classify your stakeholders is to use the Power/Interest Grid. If a stakeholder is high interest / high power, what should the Project Manager do?
-Hint: If a stakeholder is high interest / high power.
+Hint: high/high
 
 ===== NHÓM 24 (2 câu gần giống) =====
 [PMG201c - FA 2024 - FE] Q49
