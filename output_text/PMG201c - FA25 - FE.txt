@@ -262,7 +262,7 @@ D. Your peers.
 ===== Q37.webp =====
 Question: 37 Which one is the correct matching of communication methods and the scenarios? 
 Communication methods:
- (1) mreractive 
+ (1) interactive 
  (3) Pull 
  (4) Scenarios 
 Scenarios:

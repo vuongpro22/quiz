@@ -12,6 +12,7 @@
     "import:exams": "npm --prefix quiz-server run import:local"
   },
   "dependencies": {
+    "diff": "^9.0.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0"
   },

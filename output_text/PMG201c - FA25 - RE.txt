@@ -1,5 +1,6 @@
 ===== Q1.webp =====
-Question: 1 True or False: A Project is defined as being unique and temporary, with an defined start and finish
+Question: 1 True or False: A Project is defined as being unique and temporary, 
+with an defined start and finish
 (Choose 1 answer)
 A. True
 B. False
@@ -13,7 +14,7 @@ C. Weak, Balanced, Strong and Projectized
 D. Functional, Weak, Strong and Composite
 
 ===== Q3.webp =====
-Question: 3 A project manager's primary responsibility is to deliver the product of the project within project constraints Actions taken and changes made to the benefit of one constraint could negatively affect another. Which of the following best describes the major constraints on a project’?
+Question: 3 A project manager's primary responsibility is to deliver the product of the project within project constraints Actions taken and changes made to the benefit of one constraint could negatively affect another. Which of the following best describes the major constraints on a project?
 (Choose 1 answer)
 A. Scope, number of resources, and cost
 B. Scope, cost, and schedule
@@ -35,7 +36,7 @@ Question: 5 An output of the Close Project or Close Phase process is the creatio
 A. Project archives
 B. A project charter
 C. A project management plan
-D. Arisk management plan
+D. A risk management plan
 E. A communication plan
 
 ===== Q6.webp =====
@@ -365,7 +366,10 @@ C. Parametric estimating
 D. Bottom-up estimating
 
 ===== Q49.webp =====
-Question: 49 You have a project to build a new fence. The fence will form a square. Each side is to take one day to build, and $1,000 has been budgeted per side. The sides are planned to be completed one after the other. Today is the end of day 3 Using the following project status chart to caloulate project current EV. a
+Question: 49 You have a project to build a new fence. 
+The fence will form a square. Each side is to take one day to build, and $1,000 has been budgeted per side. 
+The sides are planned to be completed one after the other. 
+Today is the end of day 3 Using the following project status chart to caloulate project current EV. 
 (Choose 1 answer)
 A. EV = $3,000
 B. EV = $2,500 

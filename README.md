@@ -150,7 +150,7 @@ python normalize_ocr_text.py ".\output_text\PMG201c - FA 2024 - FE.txt"
 
 python ocr_scan.py "img_cropped\PMG201c - FA 2024 - FE" --tesseract-cmd "C:\Program Files\Tesseract-OCR\tesseract.exe" --psm 4 -o "output_text"
 
-python auto_crop_questions.py "img\PMG201c - FA 2024 - RE" -o "img_cropped\PMG201c - FA 2024 - RE" --include-left 600 --top-cut 80
+python auto_crop_questions.py "img\PMG201c - FA 2024 - RE" -o "img_cropped\PMG201c - FA 2024 - RE" --include-left 450 --top-cut 80
 
 python quiz_gui.py
 
