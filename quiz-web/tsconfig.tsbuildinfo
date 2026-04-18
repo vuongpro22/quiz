@@ -1,1 +1,1 @@
-{"root":["./src/app.tsx","./src/randomquizsection.tsx","./src/main.tsx","./src/parsequiz.ts","./src/randomquizpool.ts","./src/vite-env.d.ts"],"version":"5.7.3"}
+{"root":["./src/app.tsx","./src/randomquizsection.tsx","./src/similarquizpanel.tsx","./src/main.tsx","./src/parsequiz.ts","./src/randomquizpool.ts","./src/similarquestions.ts","./src/vite-env.d.ts"],"version":"5.7.3"}

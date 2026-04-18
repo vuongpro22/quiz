@@ -47,7 +47,7 @@ C. The sponsor
 D. The stakeholders
 
 ===== Q7.webp =====
-Question: 7 Which one ts not the causes of scope creep?
+Question: 7 Which one is not the causes of scope creep?
 (Choose 1 answer)
 A. Poorly defined objectives
 B. Lack of defined change contro! process
@@ -140,8 +140,14 @@ A. False
 B. True
 
 ===== Q20.webp =====
-Question: 20 The following table ts an activity list that includes the Activity Du ration Predecessor duration and predecessor for a senes of project Bo 4A AE Ce Ee fend |
+Question: The following table is an activity list that includes the
+duration and predecessor for a series of project
+activities. What is the duration of the critical path?
 (Choose 1 answer)
+A. 13
+B. 9
+C. 11
+D. 14
 
 ===== Q21.webp =====
 Question: 21  True or False: The Forward Pass is used through the activities to determine the total duration of the project
@@ -150,7 +156,8 @@ A. True
 B. False
 
 ===== Q22.webp =====
-Question: 22 True or False: The Crashing ts the approach to add more resources (labor, overtime, etc.) into the activities to reduce their durations
+Question: 22 True or False: The Crashing is the approach to add more resources (labor, overtime, etc.) 
+into the activities to reduce their durations
 (Choose 1 answer)
 A. True
 B. False
@@ -210,7 +217,9 @@ A. False
 B. True
 
 ===== Q31.webp =====
-Question: 31 True or False: Your role as the project manager during quality assurance is to work with a quality assurance manager who will create a test plan and test cases which will be used to test the product you are creating in order to prevent defects from reaching your customer
+Question: 31 True or False: Your role as the project manager during quality assurance is to work with a quality assurance manager 
+who will create a test plan and test cases which will be used to test the product you are creating in order to prevent 
+defects from reaching your customer
 (Choose 1 answer)
 A. False
 B. True
@@ -350,7 +359,9 @@ C. Manage closely
 D. Keep informed
 
 ===== Q49.webp =====
-Question: 49 You just came from a meeting with one of your project stakeholders, he knew about your project and also its potential impacts, and he always supported for the work and its outcomes. How would you classify him?
+Question: 49 You just came from a meeting with one of your project stakeholders, 
+he knew about your project and also its potential impacts, 
+and he always supported for the work and its outcomes. How would you classify him?
 (Choose 1 answer)
 A. Supportive
 B. Neutral

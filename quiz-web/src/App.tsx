@@ -1,5 +1,6 @@
 import { useCallback, useEffect, useRef, useState } from "react";
 import { RandomQuizSection } from "./RandomQuizSection";
+import { SimilarQuizPanel } from "./SimilarQuizPanel";
 import "./App.css";
 import type { QuestionsMap } from "./parseQuiz";
 import {
@@ -8,14 +9,21 @@ import {
   parseQuestions,
   setsEqual,
 } from "./parseQuiz";
+import { buildPoolFromExamDocuments, type ExamDocument } from "./randomQuizPool";
+import {
+  buildSimilarSlides,
+  clusterSimilarPool,
+  DEFAULT_SIMILARITY_THRESHOLD,
+  type SimilarSlide,
+} from "./similarQuestions";
 
-type View = "setup" | "quiz" | "flashcard" | "study";
+type View = "setup" | "quiz" | "flashcard" | "study" | "similar";
 
 type HomeTab = "single" | "random";
 
 type ExamListItem = { _id: string; examKey: string; updatedAt?: string; questionCount?: number };
 
-type LearnMode = "quiz" | "flashcard" | "study";
+type LearnMode = "quiz" | "flashcard" | "study" | "similar";
 
 const STUDY_BATCH_SIZE = 5;
 
@@ -107,6 +115,8 @@ export default function App() {
   const [studyWrongInLastRound, setStudyWrongInLastRound] = useState(0);
   const [studyLocked, setStudyLocked] = useState<Record<number, boolean>>({});
 
+  const [similarSlides, setSimilarSlides] = useState<SimilarSlide[]>([]);
+
   const applyBundle = useCallback(
     (qText: string, aText: string, answersVirtualFileName: string): number[] | null => {
       const qs = parseQuestions(qText);
@@ -176,7 +186,7 @@ export default function App() {
   }, [view]);
 
   const startExamFromCard = useCallback(
-    async (examId: string, mode: LearnMode) => {
+    async (examId: string, mode: Exclude<LearnMode, "similar">) => {
       setServerLoading(true);
       setError(null);
       try {
@@ -210,6 +220,45 @@ export default function App() {
     },
     [applyBundle, startStudySession]
   );
+
+  const startSimilarPractice = useCallback(async () => {
+    setServerLoading(true);
+    setError(null);
+    try {
+      const listRes = await fetch(apiUrl("/api/exams"));
+      if (!listRes.ok) {
+        setError(`Không đọc được danh sách đề (${listRes.status}).`);
+        return;
+      }
+      const list = (await listRes.json()) as ExamListItem[];
+      if (!Array.isArray(list) || !list.length) {
+        setError("Chưa có bộ đề nào trên server.");
+        return;
+      }
+      const docs = await Promise.all(
+        list.map(async (row) => {
+          const r = await fetch(apiUrl(`/api/exams/${row._id}`));
+          if (!r.ok) throw new Error(`Lỗi tải ${row.examKey}`);
+          return (await r.json()) as ExamDocument & { _id: string };
+        })
+      );
+      const pool = buildPoolFromExamDocuments(docs);
+      const groups = clusterSimilarPool(pool, DEFAULT_SIMILARITY_THRESHOLD);
+      const slides = buildSimilarSlides(groups);
+      if (!slides.length) {
+        setError(
+          "Không tìm được nhóm câu gần giống (mỗi nhóm cần ≥2 câu). Thử import thêm đề hoặc chỉnh ngưỡng trong similarQuestions.ts."
+        );
+        return;
+      }
+      setSimilarSlides(slides);
+      setView("similar");
+    } catch {
+      setError("Lỗi kết nối API (server có chạy không?).");
+    } finally {
+      setServerLoading(false);
+    }
+  }, []);
 
   const activeNumbers = view === "study" ? studyRoundNums : qNumbers;
   const qNum = activeNumbers[currentIdx];
@@ -412,7 +461,7 @@ export default function App() {
     };
     window.addEventListener("keydown", onKey);
     return () => window.removeEventListener("keydown", onKey);
-  }, [view, qNumbers.length, studyRoundNums.length]);
+  }, [view, qNumbers.length, studyRoundNums.length, currentIdx, submitStudyRound]);
 
   const flashQNum = qNumbers[flashIdx];
   const flashData = flashQNum !== undefined ? questions[flashQNum] : undefined;
@@ -429,7 +478,11 @@ export default function App() {
             <p className="path-hero__sub">
               Làm bài trắc nghiệm có chấm điểm, hoặc học nhanh với thẻ ghi nhớ — tất cả từ kho đề trên MongoDB.
             </p>
-            <p className="path-hero__sub">Chọn chế độ bên dưới, rồi bấm bắt đầu trên thẻ bộ đề bạn muốn.</p>
+            <p className="path-hero__sub">
+              {learnMode === "similar"
+                ? "Chế độ này gom câu gần giống từ mọi đề trên server — các biến thể xếp liền nhau, có gợi ý khác biệt."
+                : "Chọn chế độ bên dưới, rồi bấm bắt đầu trên thẻ bộ đề bạn muốn."}
+            </p>
           </header>
 
           <div className="mode-toggle" role="tablist" aria-label="Chế độ học">
@@ -461,18 +514,31 @@ export default function App() {
               >
                 Chế độ Học
               </button>
+              <button
+                type="button"
+                role="tab"
+                aria-selected={learnMode === "similar"}
+                className={`mode-toggle__btn${learnMode === "similar" ? " mode-toggle__btn--active" : ""}`}
+                onClick={() => setLearnMode("similar")}
+              >
+                Câu gần giống
+              </button>
             </div>
           </div>
 
-          <p className="path-hint">Chọn một bộ đề từ MongoDB để bắt đầu.</p>
+          <p className="path-hint">
+            {learnMode === "similar"
+              ? "Bộ đề tổng hợp: tải toàn bộ đề, gom nhóm câu gần giống, xếp liền nhau — mỗi màn hình có gợi ý khác biệt so với câu mẫu trong nhóm."
+              : "Chọn một bộ đề từ MongoDB để bắt đầu."}
+          </p>
 
           {listLoading && <div className="path-loading">Đang tải danh sách đề…</div>}
 
-          {!listLoading && serverExams.length === 0 && (
+          {learnMode !== "similar" && !listLoading && serverExams.length === 0 && (
             <div className="path-empty">Chưa có bộ đề trên server. Hãy import dữ liệu (quiz-server) rồi tải lại trang.</div>
           )}
 
-          {!listLoading && serverExams.length > 0 && (
+          {learnMode !== "similar" && !listLoading && serverExams.length > 0 && (
             <div className="path-grid">
               {serverExams.map((e, idx) => {
                 const theme = CARD_THEMES[idx % CARD_THEMES.length]!;
@@ -498,7 +564,9 @@ export default function App() {
                       type="button"
                       className="learning-card__start"
                       disabled={serverLoading}
-                      onClick={() => void startExamFromCard(e._id, learnMode)}
+                      onClick={() =>
+                        void startExamFromCard(e._id, learnMode as Exclude<LearnMode, "similar">)
+                      }
                     >
                       {learnMode === "quiz"
                         ? "Bắt đầu Quiz"
@@ -510,6 +578,42 @@ export default function App() {
                   </article>
                 );
               })}
+            </div>
+          )}
+
+          {learnMode === "similar" && !listLoading && serverExams.length === 0 && (
+            <div className="path-empty">Chưa có bộ đề trên server — không thể gom nhóm. Hãy import dữ liệu (quiz-server).</div>
+          )}
+
+          {learnMode === "similar" && !listLoading && serverExams.length > 0 && (
+            <div className="path-grid path-grid--similar">
+              <article className={`learning-card ${CARD_THEMES[0]!.variant}`}>
+                <span className="learning-card__badge">Tổng hợp</span>
+                <h2 className="learning-card__title">Câu gần giống (mọi đề)</h2>
+                <p className="learning-card__desc">
+                
+                </p>
+                <hr className="learning-card__rule" />
+                <div className="learning-card__stats">
+                  <div>
+                    <span className={`learning-card__stat-val ${CARD_THEMES[0]!.stat}`}>—</span>
+                    <span className="learning-card__stat-label">Số câu</span>
+                  </div>
+                  <div>
+                    <span className={`learning-card__stat-val ${CARD_THEMES[0]!.stat}`}>Học</span>
+                    <span className="learning-card__stat-label">Chế độ</span>
+                  </div>
+                </div>
+                <button
+                  type="button"
+                  className="learning-card__start"
+                  disabled={serverLoading}
+                  onClick={() => void startSimilarPractice()}
+                >
+                  Tải &amp; bắt đầu
+                  <StartArrowIcon />
+                </button>
+              </article>
             </div>
           )}
 
@@ -669,13 +773,11 @@ export default function App() {
                     : `Chỉ True/False (${trueFalseNumbers.length})`}
                 </button>
               )}
-              <button
-                type="button"
-                className="btn-submit-grade"
-                onClick={view === "study" ? submitStudyRound : submitQuiz}
-              >
-                {view === "study" ? "Chấm lượt hiện tại" : "Nộp bài & chấm điểm"}
-              </button>
+              {view !== "study" && (
+                <button type="button" className="btn-submit-grade" onClick={submitQuiz}>
+                  Nộp bài & chấm điểm
+                </button>
+              )}
               <button
                 type="button"
                 className="btn-nav-next"
@@ -697,6 +799,17 @@ export default function App() {
             </span>
           </div>
         </div>
+      )}
+
+      {view === "similar" && similarSlides.length > 0 && (
+        <SimilarQuizPanel
+          slides={similarSlides}
+          onBack={() => {
+            setView("setup");
+            setSimilarSlides([]);
+            setResultText(null);
+          }}
+        />
       )}
 
       {view === "flashcard" && flashData && flashQNum !== undefined && (

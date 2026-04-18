@@ -42,7 +42,7 @@ D. Increased understanding of what is takes to get it done
 E. Ability to say “NO”
 
 ===== Q7.webp =====
-Question: 7 A project manager may use to make sure the team members clearly know what is included in each of their work packages
+Question: 7 A project manager may use ____to make sure the team members clearly know what is included in each of their work packages
 (Choose 1 answer)
 A. The project scope statement
 B. The product scope
@@ -62,12 +62,12 @@ A. True
 B. False
 
 ===== Q10.webp =====
-Question: 10 (Choose | answer) Which of the following is true about the development of a project charter?
+Question: 10 (Choose 1 answer) Which of the following is true about the development of a project charter?
 (Choose 1 answer)
 A. The sponsor creates the project charter. and the project manager approves it
 B. The project team creates the project charter. and the PMO (Project Management Office) approves it
 C. The executive manager creates the project charter, and the functional manager approves it
-D. The project manager creates the project charter, and the sponsor approves tt
+D. The project manager creates the project charter, and the sponsor approves it
 
 ===== Q11.webp =====
 Question: 11 True or False: The term resources refers to not only people, it also includes money or materials or equipment
@@ -112,8 +112,15 @@ C. Scope, risk, resource, and other management plan
 D. A project schedule
 
 ===== Q17.webp =====
-Question: 17 The foltewing table ts an activity list that includes the Activity Du ration Predecessor duration and predecessor for a series of project activities. What is the duration of the critical path?
+Question: The following table is an activity list that includes the
+duration and predecessor for a series of project
+activities. What is the duration of the critical path?
 (Choose 1 answer)
+A. 9
+B. 11
+C. 13
+D. 14
+
 
 ===== Q18.webp =====
 Question: 18 (Choose | answer) True or False: The Project Budget is equal to only the Cost Baseline budget
@@ -225,8 +232,13 @@ C. Requires considerable experience to do well
 D. Does not take into account the differences between projects
 
 ===== Q33.webp =====
-Question: 33 Your project has a team of which consists of yourself, a tester, five developers and a communicator. How many communication channels on your team?
+Question: 33 Your project has a team of which consists of yourself, a tester, five developers and a communicator. 
+How many communication channels on your team?
 (Choose 1 answer)
+A. 8
+B. 9
+C. 28
+D. 36
 
 ===== Q34.webp =====
 Question: 34 Consider a scenario in which you learn that your project is running two weeks behind schedule. How would you know if it is acceptable to be two weeks late?
@@ -237,7 +249,7 @@ C. If the team tells you the work cannot be completes any earlier than it is acc
 D. Your variance thresholds should be documented in your project management plan. look there for guidance.
 
 ===== Q35.webp =====
-Question: 35 A project manager's primary responsibility 1s to deliver the product of the project within project constraints Actions taken and changes made to the benefit of one constraint could negatively affect another. Which of the following best describes the major constraints on a project?
+Question: 35 A project manager's primary responsibility is to deliver the product of the project within project constraints Actions taken and changes made to the benefit of one constraint could negatively affect another. Which of the following best describes the major constraints on a project?
 (Choose 1 answer)
 A. Scope. number of resources. and cost
 B. Scope. cost. and schedule

@@ -1,5 +1,5 @@
 ===== Q1.webp =====
-Question: 1 As you plan your project. the sponsor informed you that all team members will be assigned to your project for at most 50% of their available time. This ts an example of
+Question: 1 As you plan your project. the sponsor informed you that all team members will be assigned to your project for at most 50% of their available time. This is an example of
 (Choose 1 answer)
 A. Poor planning.
 B. Wishful thinking.
@@ -39,6 +39,10 @@ D. Completing the work
 ===== Q6.webp =====
 Question: 6 “ Your project has a team of which consists of yourself. a tester, five developers and a communicator. How many communication channels on your team?
 (Choose 1 answer)
+A. 8
+B. 9
+C. 28
+D. 36
 
 ===== Q7.webp =====
 Question: 7 Who might not be your project's stakeholders?
@@ -51,7 +55,7 @@ E. Sponsor
 F. People that are not impacted by your project
 
 ===== Q8.webp =====
-Question: 8 “ True or False: The Forward Pass 1s used through the activities to determine the critical path & available float of the project
+Question: 8 “ True or False: The Forward Pass Is used through the activities to determine the critical path & available float of the project
 (Choose 1 answer)
 A. True
 B. False
@@ -201,7 +205,7 @@ A. True
 B. False
 
 ===== Q27.webp =====
-Question: 27 An estimate created by looking at a similar project or activity and then adding or subtracting to or from the estimate based on the differences between the two 1s called
+Question: 27 An estimate created by looking at a similar project or activity and then adding or subtracting to or from the estimate based on the differences between the two is called
 (Choose 1 answer)
 A. Parametric estimating
 B. Analogous estimating
@@ -286,7 +290,8 @@ B. True
 Question: 38  In Earned Value Management Technique, you can compute the Schedule Variance (SV) by applying which of following formula? (Choase 1 answer}
 (Choose 1 answer)
 A. SV=EV/PV
-B. SV=EV-AC Cc. SV=EV-PV
+B. SV=EV-AC 
+C. SV=EV-PV
 D. SV=EV/AC
 
 ===== Q39.webp =====
@@ -338,15 +343,25 @@ D. Help to identify riskier activities
 E. Help to justify project quality metrics
 
 ===== Q45.webp =====
-Question:  Activity | Day1 | Dey2 | Dey3 | Dey4 | StatuEndofDay3 You have a project to build a new fence. The fence val fsidea sr] | Complete, spent $1,000 form a square. Each side !s to take one day to build, and Side2 | S—F——_PF i i Complete, spent $900 $1000 has been budgeted per side, The sides ae sides [|S pr] (Se, spent $500 fhoendofday 3 ne ne ower Today's | CT CS — | 5 pF [75% done, spent $600 | the end of day 3 [Sides | S—————_ |PS —_—_PF |75% done, spent $600 Using the following project status chart to calculate project current BAC I key: S = Actual Start, F = Actual Finish, PS = Planned Start, and PF = Planned Finish
+Question:  You have a project to build a new fence. The fence will
+form a square. Each side is to take one day to build, and
+$1.000 has been budgeted per side. The sides are
+planned to be completed one after the other. Today is
+the end of day 3.
+Using the following project status chart to calculate
+project current BAC:
+
 (Choose 1 answer)
-A. BAC = $2,500
-B. BAC = $3,100 CBAC = $3.250
-D. BAC = 34.000
-E. BAC = $3.000 F BAC = $2,200
+
+A. BAC= $2,500
+B. BAC= $3.100
+C. BAC= $3.250
+D. BAC= $4,000
+E. BAC= $3.000
+F. BAC= $2,200
 
 ===== Q46.webp =====
-Question: 46 UE A ne - aati Which one is not the five engagement levels of stakeholders?
+Question: 46 Which one is not the five engagement levels of stakeholders?
 (Choose 1 answer)
 A. Unaware
 B. Resistant

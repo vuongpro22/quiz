@@ -55,7 +55,7 @@ E. Ability to say “NO*
 ===== Q8.webp =====
 Question: 8 To ensure control over the incidence and frequency of change, the project manager establishes a
 (Choose 1 answer)
-A. Work breakdown structure (Choose 1 answer)
+A. Work breakdown structure 
 B. Responsibility assignment matrix
 C. Work procedure schedule
 D. Change control process
@@ -112,7 +112,7 @@ D. Start to start relationship.
 ===== Q15.webp =====
 Question: 15 To calculate late start (LS) of an activity, you will
 (Choose 1 answer)
-A. Take its late finish minus its estimated duration. (Choose 1 answer)
+A. Take its late finish minus its estimated duration.
 B. Take its early finish minus its estimated duration.
 C. Take its early start plus its estimated duration.
 D. Take its early start.
@@ -130,7 +130,8 @@ A. True
 B. False
 
 ===== Q18.webp =====
-Question: 18 A cost can be either variable or fixed. Which of the following statements are correct ? (Choose 2 answers)
+Question: 18 A cost can be either variable or fixed. Which of the following statements are correct ? 
+(Choose 2 answers)
 A. Variable costs: These costs change with the amount of production. Examples include the cost of material supplies, and wages
 B. Fixed costs: These costs do not change as production changes. Examples include the cost of setup, rent, utilities, etc.
 C. Fixed costs: These costs change with the amount of production. Examples include the cost of material, supplies, and wages.
@@ -155,7 +156,7 @@ D. Contingency reserve is tied to only one specific milestone.
 ===== Q21.webp =====
 Question: 21 Earned value management integrates scope, cost, and schedule measures to
 (Choose 1 answer)
-A. assess communication effectiveness among project team members. (Choose 1 answer)
+A. assess communication effectiveness among project team members. 
 B. assess whether all requirements were met.
 C. develop a preliminary budget.
 D. assess project performance and progress.
@@ -215,7 +216,7 @@ D. Must be suppressed
 ===== Q30.webp =====
 Question: 30 Which one of below situations is not correct when discussing about Responsibility Assignment Matrix?
 (Choose 1 answer)
-A. Two team members are consulted about the same task. (Choose 1 answer)
+A. Two team members are consulted about the same task.
 B. Two team members are informed about the same task.
 C. Two team members are responsible for the same task.
 D. Two team members are accountable for the same task.
@@ -270,7 +271,7 @@ D. Your peers.
 
 ===== Q37.webp =====
 Question: 37 Which one is the correct matching of communication methods and the explanations? Communication methods :
-(1) mreractive 
+(1) Interactive 
 (2) Pull 
 (3)Pull
 Explanations:

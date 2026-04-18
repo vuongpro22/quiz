@@ -2,14 +2,14 @@
 Question: 1 True or False: Project quality focuses on the project management processes used to meet project objectives
 (Choose 1 answer)
 A. False
-B. True as lifa 
+B. True 
 
 ===== Q2.webp =====
 Question: 2 All the following are characteristics of a project EXCEPT
 (Choose 1 answer)
-A. Itis temporary
+A. It is temporary
 B. It has a definite beginning and end
-C. Ithas interrelated activities
+C. It has interrelated activities
 D. It repeats itself every month
 
 ===== Q3.webp =====
@@ -37,7 +37,7 @@ C. Effective communication at key interface points
 D. Product control 
 
 ===== Q6.webp =====
-Question: 6 i As discussed in the Project Management course, The PMBOK® Guide describes 10 Project Management Knowledge Areas. Identify 3 out of the 10
+Question: 6  As discussed in the Project Management course, The PMBOK® Guide describes 10 Project Management Knowledge Areas. Identify 3 out of the 10
 (Choose 1 answer)
 A. Stakeholder, Communication, Human Resource
 B. Stakeholder, Vendor, Customer
@@ -47,7 +47,7 @@ D. Procurement, Communication, Customer
 ===== Q7.webp =====
 Question: 7 Which of the following is included in a project charter?
 (Choose 1 answer)
-A. Arisk management strategy
+A. A risk management strategy
 B. Work package estimates
 C. Detailed resources estimates
 D. The business case for the project 
@@ -101,13 +101,15 @@ C. A project demand.
 D. A constraint.
 
 ===== Q14.webp =====
-Question: 14 3 True or False: The WBS should completely depict the scope of your project that if something is not in the WBS it is because it is NOT part of the project
+Question: 14 True or False: The WBS should completely depict the scope of your project that if something is not in the WBS it is because it is NOT part of the project
 (Choose 1 answer)
 A. False
 B. True 
 
 ===== Q15.webp =====
-Question: 15 eee st thow work packages to make sure the team members clearly know what is included in
+Question: A project manager may use _______ to make sure the team members clearly know what is included in
+each of their work packages.
+
 (Choose 1 answer)
 A. The project scope statement
 B. The product scope
@@ -131,13 +133,18 @@ C. They are completely defined in the project charter
 D. They are supported by activities on detail schedules 
 
 ===== Q18.webp =====
-Question: 18 Of rlepevdeney used work in a specific order because it cannot be completed any other way, what is the type
+When you schedule work in a specific order because it cannot be completed any other way, what is the type
+of dependency used?
 (Choose 1 answer)
-A. Discretionary
-B. Internal
-C. Mandatory
-D. External
 
+
+A. Discretionary
+
+B. Internal
+
+C. Mandatory
+
+D. External
 ===== Q19.webp =====
 Question: 19 True or False: If "develop online modules" must be 100% completed before "review online modules" can begin that is called a finish to start relationship
 (Choose 1 answer)
@@ -153,21 +160,26 @@ C. Take the late finish of its immediate predecessor.
 D. Take the late start of its immediate predecessor.
 
 ===== Q21.webp =====
-Question: 21 joloyed race I delaying the end we ial through the network and represents the work that can be
+True or False: The critical path is the shortest path through the network and represents the work that can be
+delayed without delaying the end of the project.
 (Choose 1 answer)
+
 A. False
 B. True
 
 ===== Q22.webp =====
-Question: 22 thep cect The Forward Pass is used through the activities to determine the critical path & available float of
+True or False: The Forward Pass is used through the activities to determine the critical path & available float of
+the project.
 (Choose 1 answer)
+
 A. True
 B. False
-
 ===== Q23.webp =====
-Question: 23 Tue Or ase Tne Crashing is the approach to add more resources (labor, overtime, etc.) into the activities to
-(Choose 1 answer)
+True or False: The Crashing is the approach to add more resources (labor, overtime, etc.) into the activities to
+reduce their durations.
+
 A. True
+
 B. False
 
 ===== Q24.webp =====
@@ -179,13 +191,15 @@ C. Requires considerable experience to do well
 D. Does not take into account the differences between projects 
 
 ===== Q25.webp =====
-Question: 25 pe or False: The danger of estimating using the same parametric model is the no longer applicable of
-(Choose 1 answer)
+True or False: The danger of estimating using the same parametric model is the no longer applicable of
+historical data.
+
 A. True
+
 B. False
 
 ===== Q26.webp =====
-Question: 26 S True or False: Using top-down estimating techniques when activity durations or resource quantities are uncertain
+Question: 26  True or False: Using top-down estimating techniques when activity durations or resource quantities are uncertain
 (Choose 1 answer)
 A. True
 B. False 
@@ -203,7 +217,7 @@ B. behind schedule.
 C. ahead of schedule.
 
 ===== Q29.webp =====
-Question: 29 B True or False: When it comes to projects, the emphasis is on strategic quality management. Quality is not an accident, quality is part of the plan, and quality is everyone's job
+Question: 29  True or False: When it comes to projects, the emphasis is on strategic quality management. Quality is not an accident, quality is part of the plan, and quality is everyone's job
 (Choose 1 answer)
 A. False
 B. True 
@@ -240,11 +254,15 @@ C. Should be avoided
 D. Can (and should) be managed 
 
 ===== Q35.webp =====
-Question: 35 aie oan a eeccional debs on now to soWe al Peer issue. They express their disagreement and then
+Two team members disagree on how to solve a project issue. They express their disagreement and then
+engage in a professional debate. This is an example of:
 (Choose 1 answer)
 A. Unrealistic conflict.
+
 B. Unproductive conflict.
+
 C. Healthy conflict.
+
 D. Unhealthy conflict.
 
 ===== Q36.webp =====
@@ -288,20 +306,23 @@ C. Your subordinates.
 D. Your peers.
 
 ===== Q41.webp =====
-Question: 41 M True or False: The sender is responsible to provide feedback to acknowledge that the sent message has been received and understood. The receiver is responsible to make sure the sent message Is clear, complete, and appropriate
+Question: 41 True or False: The sender is responsible to provide feedback to acknowledge that the sent message has been received and understood. The receiver is responsible to make sure the sent message Is clear, complete, and appropriate
 (Choose 1 answer)
 A. True
 B. False
 
 ===== Q42.webp =====
-Question: 42 the Create objectives reporting aims to inform stakeholders how resources are being used to achieve
+True or False: Performance reporting aims to inform stakeholders how resources are being used to achieve
+the project's objectives.
 (Choose 1 answer)
 A. True
+
 B. False
 
 ===== Q43.webp =====
-Question: 43 The purpose of project risk management is to ch 1 A. Minimize the likelihood or the impact of negative events or threats to your project and to increase the likelihood or impact of positive events
+Question: 43 The purpose of project risk management is to:
 (Choose 1 answer)
+A. Minimize the likelihood or the impact of negative events or threats to your project and to increase the likelihood or impact of positive events
 B. Neutralize the likelihood or the impact of negative events or threats to your project and to neutralize the likelihood or impact of positive events.
 C. Minimize the likelihood or the impact of positive events or threats to your project and to increase the likelihood or impact of negative events.
 D. Eliminate the likelihood or the impact of negative events or threats to your project and to decrease the likelihood or impact of positive events. 
@@ -334,18 +355,24 @@ D. You should develop the mitigation plan to reduce the probability of the risk 
 Question: 47 True or False: If you are not certain who your stakeholders are, asking who will use the product or service being created can be helpful
 (Choose 1 answer)
 A. False
-B. True Frerithriod ean
+B. True 
 
 ===== Q48.webp =====
-Question: 48 power ey Ao classy your Ses Manager 2 aise the Power/Interest Grid. If a stakeholder is high interest / high
+One way to classify your stakeholders is to use the Power/Interest Grid. If a stakeholder is high interest / high
+power, what should the Project Manager do?
 (Choose 1 answer)
-A. Monitor
-B. Keep satisfied
-C. Manage closely
-D. Keep informed
 
+A. Monitor
+
+B. Keep satisfied
+
+C. Manage closely
+
+D. Keep informed
 ===== Q49.webp =====
-Question: 49 You just came from a meeting with one of your project stakeholders, he knew about your project and also its potential impacts, and he always supported for the work and its outcomes. How would you classify him?
+Question: 49 You just came from a meeting with one of your project stakeholders, 
+he knew about your project and also its potential impacts, 
+and he always supported for the work and its outcomes. How would you classify him?
 (Choose 1 answer)
 A. Supportive
 B. Neutral

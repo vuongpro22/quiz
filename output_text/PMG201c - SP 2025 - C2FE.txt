@@ -15,7 +15,7 @@ C. Projectized
 D. Coordinator 
 
 ===== Q3.webp =====
-Question: 3 A project manager's primary responsibility is to deliver the product of the project within project constraints Actions taken and changes made to the benefit of one constraint could negatively affect another. Which of the following best describes the major constraints on a project’?
+Question: 3 A project manager's primary responsibility is to deliver the product of the project within project constraints Actions taken and changes made to the benefit of one constraint could negatively affect another. Which of the following best describes the major constraints on a project?
 (Choose 1 answer)
 A. Scope, number of resources, and cost
 B. Scope, cost, and schedule
@@ -39,7 +39,7 @@ C. Estimate Costs
 D. Sequence Activities
 
 ===== Q6.webp =====
-Question: 6 D True or False: The Project Charter is a document issued by the project initiator or sponsor that formally authorizes the existence of a project. It provides the project manager with the authority to apply organizational resources to project activities
+Question: 6  True or False: The Project Charter is a document issued by the project initiator or sponsor that formally authorizes the existence of a project. It provides the project manager with the authority to apply organizational resources to project activities
 (Choose 1 answer)
 A. False
 B. True 
@@ -67,7 +67,7 @@ C. Good team relations
 D. Lack of a clear work breakdown structure
 
 ===== Q10.webp =====
-Question: 10 company procedtes require the creation of a lessons learned register. Which of the following is the best use of lessons learned ?
+Question: 10 company procedures require the creation of a lessons learned register. Which of the following is the best use of lessons learned ?
 (Choose 1 answer)
 A. Historical records for future projects
 B. Planning record for the current project
@@ -75,7 +75,7 @@ C. Informing the team about what the project manager has done
 D. Informing the team about the project management plan 
 
 ===== Q11.webp =====
-Question: 11 i Should the Project Scope Statement document include?
+Question: 11  Should the Project Scope Statement document include?
 (Choose 1 answer)
 A. Acceptance criteria
 B. Milestones
@@ -314,7 +314,7 @@ B. False
 Question: 43 True or False: A positive risk is a threat; a negative risk is an opportunity
 (Choose 1 answer)
 A. False
-B. True VGWERFIOW.COM
+B. True 
 
 ===== Q44.webp =====
 Question: 44 All of the following tools and techniques can be valuable in risk identification, EXCEPT
@@ -362,7 +362,8 @@ D. Keep informed
 Question: 49 You just came from a meeting with one of your project stakeholders, he knew well about your project and also its potential impacts, and actively engaged in ensuring that the project is a success. How would you classify him?
 (Choose 1 answer)
 A. Supportive
-B. Neutral Cc. Unaware
+B. Neutral 
+C. Unaware
 D. Leading 
 
 ===== Q50.webp =====
