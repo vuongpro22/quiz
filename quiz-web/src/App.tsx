@@ -9,13 +9,14 @@ import {
   parseQuestions,
   setsEqual,
 } from "./parseQuiz";
-import { buildPoolFromExamDocuments, type ExamDocument } from "./randomQuizPool";
+import type { ExamDocument } from "./randomQuizPool";
 import {
-  buildSimilarSlides,
-  clusterSimilarPool,
-  DEFAULT_SIMILARITY_THRESHOLD,
-  type SimilarSlide,
-} from "./similarQuestions";
+  bundleFromExamDocument,
+  mergeSameQuestionWithBundles,
+  parseSameQuestionTxt,
+  type ExamQaBundle,
+} from "./parseSameQuestionTxt";
+import type { SimilarSlide } from "./similarQuestions";
 
 type View = "setup" | "quiz" | "flashcard" | "study" | "similar";
 
@@ -225,6 +226,26 @@ export default function App() {
     setServerLoading(true);
     setError(null);
     try {
+      const txtUrl = `${import.meta.env.BASE_URL}same-question.txt`;
+      const txtRes = await fetch(txtUrl);
+      if (!txtRes.ok) {
+        setError(
+          `Không tải được same-question.txt (${txtRes.status}). Trong thư mục quiz-web chạy: npm run sync-same-question (file nguồn: same-question.txt ở thư mục cha).`
+        );
+        return;
+      }
+      const raw = await txtRes.text();
+      const parsed = parseSameQuestionTxt(raw);
+      if ("error" in parsed) {
+        setError(parsed.error);
+        return;
+      }
+      const { rows } = parsed;
+      if (!rows.length) {
+        setError("same-question.txt không có câu nào.");
+        return;
+      }
+
       const listRes = await fetch(apiUrl("/api/exams"));
       if (!listRes.ok) {
         setError(`Không đọc được danh sách đề (${listRes.status}).`);
@@ -232,29 +253,36 @@ export default function App() {
       }
       const list = (await listRes.json()) as ExamListItem[];
       if (!Array.isArray(list) || !list.length) {
-        setError("Chưa có bộ đề nào trên server.");
+        setError("Chưa có bộ đề nào trên server — cần API để lấy đáp án theo [tên đề] Qn.");
         return;
       }
-      const docs = await Promise.all(
-        list.map(async (row) => {
-          const r = await fetch(apiUrl(`/api/exams/${row._id}`));
-          if (!r.ok) throw new Error(`Lỗi tải ${row.examKey}`);
-          return (await r.json()) as ExamDocument & { _id: string };
-        })
-      );
-      const pool = buildPoolFromExamDocuments(docs);
-      const groups = clusterSimilarPool(pool, DEFAULT_SIMILARITY_THRESHOLD);
-      const slides = buildSimilarSlides(groups);
-      if (!slides.length) {
-        setError(
-          "Không tìm được nhóm câu gần giống (mỗi nhóm cần ≥2 câu). Thử import thêm đề hoặc chỉnh ngưỡng trong similarQuestions.ts."
-        );
+      const keyToId = new Map(list.map((e) => [e.examKey, e._id] as const));
+      const neededKeys = [...new Set(rows.map((r) => r.examKey))];
+      const bundles = new Map<string, ExamQaBundle>();
+      for (const examKey of neededKeys) {
+        const id = keyToId.get(examKey);
+        if (!id) {
+          setError(`Đề "${examKey}" có trong same-question.txt nhưng không có trên server (import Mongo).`);
+          return;
+        }
+        const r = await fetch(apiUrl(`/api/exams/${id}`));
+        if (!r.ok) {
+          setError(`Không tải được đề "${examKey}" (${r.status}).`);
+          return;
+        }
+        const doc = (await r.json()) as ExamDocument;
+        bundles.set(examKey, bundleFromExamDocument(doc));
+      }
+
+      const merged = mergeSameQuestionWithBundles(rows, bundles);
+      if ("error" in merged) {
+        setError(merged.error);
         return;
       }
-      setSimilarSlides(slides);
+      setSimilarSlides(merged.slides);
       setView("similar");
     } catch {
-      setError("Lỗi kết nối API (server có chạy không?).");
+      setError("Lỗi tải same-question.txt hoặc API.");
     } finally {
       setServerLoading(false);
     }
@@ -480,7 +508,7 @@ export default function App() {
             </p>
             <p className="path-hero__sub">
               {learnMode === "similar"
-                ? "Chế độ này gom câu gần giống từ mọi đề trên server — các biến thể xếp liền nhau, có gợi ý khác biệt."
+                ? "Chế độ này đọc thứ tự câu + hint từ file same-question.txt; đáp án và phương án trắc nghiệm lấy qua API theo từng [tên đề] Qn. Gợi ý chỉ hiện sau khi bạn chọn đáp án."
                 : "Chọn chế độ bên dưới, rồi bấm bắt đầu trên thẻ bộ đề bạn muốn."}
             </p>
           </header>
@@ -528,7 +556,7 @@ export default function App() {
 
           <p className="path-hint">
             {learnMode === "similar"
-              ? "Bộ đề tổng hợp: tải toàn bộ đề, gom nhóm câu gần giống, xếp liền nhau — mỗi màn hình có gợi ý khác biệt so với câu mẫu trong nhóm."
+              ? "Nội dung ôn: file same-question.txt (đồng bộ vào quiz-web/public khi chạy npm run dev/build). Server chỉ dùng để tra đáp án đúng theo mã đề + số câu."
               : "Chọn một bộ đề từ MongoDB để bắt đầu."}
           </p>
 
@@ -582,7 +610,9 @@ export default function App() {
           )}
 
           {learnMode === "similar" && !listLoading && serverExams.length === 0 && (
-            <div className="path-empty">Chưa có bộ đề trên server — không thể gom nhóm. Hãy import dữ liệu (quiz-server).</div>
+            <div className="path-empty">
+              Chưa có bộ đề trên server — không thể tra đáp án cho same-question.txt. Hãy import dữ liệu (quiz-server).
+            </div>
           )}
 
           {learnMode === "similar" && !listLoading && serverExams.length > 0 && (
@@ -591,7 +621,8 @@ export default function App() {
                 <span className="learning-card__badge">Tổng hợp</span>
                 <h2 className="learning-card__title">Câu gần giống (mọi đề)</h2>
                 <p className="learning-card__desc">
-                
+                  Đọc same-question.txt (stem + hint theo nhóm). Đáp án và các lựa chọn A–F lấy từ MongoDB theo đúng [tên đề] Qn
+                  trong file. Mỗi lượt 5 câu, câu sai được ôn lại ở lượt sau — giống chế độ Học. Gợi ý chỉ hiện sau khi chọn đáp án.
                 </p>
                 <hr className="learning-card__rule" />
                 <div className="learning-card__stats">

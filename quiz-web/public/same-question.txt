@@ -1,41 +1,4 @@
-===== NHÓM 1 (2 câu gần giống) =====
-[PMG201c - FA 2024 - FE] Q2
-We discussed three types of matrix organizations, the not mentioned one is
-Hint: the not mentioned one is
 
-[PMG201c - SP 2025 - FE] Q3
-We discussed three types of matrix organizations, they are:
-Hint: they are:
-
-===== NHÓM 2 (2 câu gần giống) =====
-[PMG201c - FA 2024 - FE] Q12
-As you plan your project, you do so thinking that all team members will be assigned to your project for at least 50% of their available time. This is an example of
-Hint: you do so thinking that 
-
-[PMG201c - SP 2025 - C2FE] Q12
-As you plan your project, the sponsor informed you that all team members will be assigned to your project for at most 50% of their available time. This is an example of
-Hint: the sponsor informed you that
-
-===== NHÓM 3 (5 câu gần giống) =====
-[PMG201c - FA 2024 - FE] Q18
-True or False: If "develop online modules" needs to finish before "review online modules" can finish, that is called a finish to finish relationship
-Hint: needs to finish before
-
-[PMG201c - FA 2024 - RE] Q3
-True or False: If "develop online modules" must be 100% completed before "review online modules” can begin that is called a finish to start relationship
-Hint: must be 100% completed before
-
-[PMG201c - FA25 - RE] Q14
-True or False: If "develop online modules" needs to begin before "review online modules" can begin, that is called a start to start relationship
-Hint: needs to begin before "review online modules" 
-
-[PMG201c - SP 2025 - C2FE] Q18
-True or False: If "review online modules" needs to begin before “develop online modules" can finish, that is called a start to finish relationship
-Hint: needs to begin before “develop online modules" 
-
-[PMG201c - SU25 - FE] Q14
-If "develop online modules” needs to begin before "review online modules" can begin, that is called a
-Hint: that is called a
 
 
 ===== NHÓM 5 (3 câu gần giống) =====

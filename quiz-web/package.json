@@ -4,6 +4,9 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
+    "sync-same-question": "node scripts/copy-same-question.mjs",
+    "predev": "npm run sync-same-question",
+    "prebuild": "npm run sync-same-question",
     "dev": "vite",
     "build": "tsc -b && vite build",
     "preview": "vite preview",
